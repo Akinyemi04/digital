@@ -1,18 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Epilogue:wght@100&family=Figtree:wght@300;400;500;600;700;800;900&family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,400;0,700;0,900;1,700&family=League+Spartan:wght@500;700;800&family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300&family=Public+Sans:ital,wght@0,300;0,700;1,400&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto&family=Source+Sans+3:wght@300;400;500;600;700;800;900&family=Ubuntu:wght@400;500;700&display=swap");
 * {
   padding: 0 0;
   margin: 0 0;
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
 header {
   background: linear-gradient(185deg, #010926 0%, rgba(206, 211, 225, 0.16) 100%);
+  display: flex;
+  justify-content: space-between;
   padding: 9px 63px 10px 23px;
   align-items: center;
-  gap: 309px;
+}
+header nav {
+  display: flex;
+  gap: 20px;
+  white-space: nowrap;
+  align-items: center;
+}
+header nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.15px;
+  transition: opacity 0.4s;
+}
+header nav a:hover {
+  opacity: 0.67;
+}
+header nav .courses p {
+  display: flex;
+}
+header nav .search {
+  color: white;
+}
+header .taster {
+  border-radius: 8px;
+  padding: 16px 20px;
+  background-color: #88c6fc;
 }
 
 footer {
-  background: linear-gradient(309deg, #05113A 0%, rgba(204, 204, 217, 0) 40.03%, rgba(5, 17, 58, 0.99) 71.5%);
+  background: linear-gradient(309deg, #05113a 0%, rgba(204, 204, 217, 0) 40.03%, rgba(5, 17, 58, 0.99) 71.5%);
   min-height: 350px;
   color: white;
+  padding: 96px 0px;
+}
+footer .base {
+  text-align: center;
+}
+footer article {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 100px;
+}
+footer article section {
+  display: flex;
+  flex-direction: column;
+}
+footer article section a {
+  text-decoration: none;
+  color: #dbdbdc;
+  margin-top: 24px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.15px;
+  transition: opacity 0.4s;
+}
+footer article section a:hover {
+  opacity: 0.67;
+}
+footer .first {
+  border-bottom: 1px solid white;
+  padding-bottom: 24px;
+}
+footer .second {
+  padding-top: 44px;
+}
+footer .second section {
+  max-width: 300px;
+}
+footer .second .one p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  margin-bottom: 30px;
+}
+footer .second .four p {
+  display: flex;
+  max-width: 205px;
+  word-wrap: break-word;
+  margin-top: 24px;
+  flex-direction: column;
+  margin-top: 24px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.15px;
 }/*# sourceMappingURL=App.css.map */
