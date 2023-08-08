@@ -1,0 +1,22 @@
+* {
+  padding: 0 0;
+  margin: 0 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: linear-gradient(
+    185deg,
+    #010926 0%,
+    rgba(206, 211, 225, 0.16) 100%
+  );
+  padding: 9px 63px 10px 23px;
+  align-items: center;
+  gap: 309px;
+}
+
+footer{
+  background: linear-gradient(309deg, #05113A 0%, rgba(204, 204, 217, 0.00) 40.03%, rgba(5, 17, 58, 0.99) 71.50%);
+  min-height: 350px;
+  color: white;
+}
