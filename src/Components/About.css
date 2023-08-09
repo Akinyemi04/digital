@@ -1,0 +1,155 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.about-container{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.about-container img{
+width: 100%;    
+height: 500px;
+object-fit: cover;
+}
+
+.about-container h1{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.about-us{
+    padding: 40px 50px;
+    background-color: rgb(201,230,255);
+    padding-right: 50px !important;
+    padding-left: 50px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+
+.about-col-1{
+    margin-right: 40px;
+    overflow: hidden;
+}
+
+.about-col-1 img{
+    /* width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+    transition: 0.5s ease;
+    height: 400px; */
+    
+}
+
+.about-col-2 {
+    
+}
+
+.about-col-2 p{
+    margin-top: 20px;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    
+}
+
+.why-us{
+    background-color: white;
+    margin: 20px;
+}
+
+.why-us-col-1{
+    padding-top: 0 !important;
+} 
+
+.why-us img{
+    padding-top: 0;
+}
+
+
+.team-wrapper{
+   margin-top: 20px; 
+   background-color: rgb(201,230,255);
+}
+
+.team-wrapper h1{
+    font-size: 52px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.team{
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team .team-member{
+    background: #fff;
+    margin: 5px;
+    margin-bottom: 50px;
+    width: 47 0px;
+    padding: 20px;
+    line-height: 20px;
+    position: relative;
+
+}
+
+.team .team-member{
+    font-size: 26px;
+    margin-top: 50px;
+}
+
+.team .team-member .team-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -7.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #201f1f;
+}
+
+.team .team-member .team-img img{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+
+}
+ 
+.team .team-member p{
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 768px){
+    .row{
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .about-col-1{
+        margin-right: 0px;
+        margin-bottom: 20px ;
+    }
+
+    .about-col-2 p{
+        padding: 0px;
+        font-size: 16px;
+
+    }
+}
