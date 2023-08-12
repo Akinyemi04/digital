@@ -3,11 +3,14 @@ import { configureStore, createSlice } from "@reduxjs/toolkit";
 const landingDetails = createSlice({
     name:'landingDetail',
     initialState:{
-
+        success_story_counter :2
     },
     reducers:{
-        change(state,action){
-
+        change_success_counter(state,action){
+            return{
+                ...state,
+                success_story_counter:action.payload
+            }
         }
     }
 })
