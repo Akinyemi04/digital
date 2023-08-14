@@ -13,12 +13,12 @@ const Footer = () => {
       <article className="first">
         <img id="img" src={logo} alt="" />
         <aside>
-          <a href=""><img src={telegram} alt=""/></a>
-          <a href=""> <img src={facebook} alt=""/></a>
-          <a href=""><img src={whatsapp} alt=""/></a>
-          <a href=""><img src={twitter} alt=""/></a>
-          <a href=""><img src={linkedin} alt=""/></a>
-          <a href=""><img src={instagram} alt=""/></a>
+          <a href="/"><img src={telegram} alt=""/></a>
+          <a href="/"> <img src={facebook} alt=""/></a>
+          <a href="/"><img src={whatsapp} alt=""/></a>
+          <a href="/"><img src={twitter} alt=""/></a>
+          <a href="/"><img src={linkedin} alt=""/></a>
+          <a href="/"><img src={instagram} alt=""/></a>
         </aside>
       </article>
       <article className="second">
