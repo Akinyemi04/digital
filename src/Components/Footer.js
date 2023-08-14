@@ -14,11 +14,11 @@ const Footer = () => {
         <img id="img" src={logo} alt="" />
         <aside>
           <a href=""><img src={telegram} alt=""/></a>
-          <a href=""> <img src={facebook} alt=""/></a>
+          <a href="https://www.facebook.com/digitalcareersacademyDCA"> <img src={facebook} alt=""/></a>
           <a href=""><img src={whatsapp} alt=""/></a>
           <a href=""><img src={twitter} alt=""/></a>
-          <a href=""><img src={linkedin} alt=""/></a>
-          <a href=""><img src={instagram} alt=""/></a>
+          <a href="https://www.linkedin.com/company/digitalcareersacademydca"><img src={linkedin} alt=""/></a>
+          <a href="https://www.instagram.com/digitalcareersacademy/"><img src={instagram} alt=""/></a>
         </aside>
       </article>
       <article className="second">
