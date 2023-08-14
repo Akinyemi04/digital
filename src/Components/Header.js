@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import SearchIcon from "@mui/icons-material/Search";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import dark_logo from "./images/dark_logo.png";
+import white_logo from "./images/white-logo.png";
 
 const Header = () => {
   const screenSize = window.screen.availWidth;
@@ -45,9 +45,10 @@ const Header = () => {
     if (style === "") {
       child.style.transform = "rotateZ(180deg)";
       article.style.display = "flex";
+      
       setTimeout(() => {
         article.style.opacity = "1";
-      }, 55);
+      }, 75);
       setTimeout(() => {
         links.map((val) => {
           val.style.display = "block";
@@ -55,24 +56,24 @@ const Header = () => {
             val.style.opacity = "1";
           }, 100);
         });
-      }, 200);
+      }, 55);
     } else if (style === "rotateZ(180deg)") {
       child.style.transform = "rotateZ(0deg)";
       links.map((val) => {
         val.style.opacity = "0";
         setTimeout(()=>{
           val.style.display='none'
-        },50)
+        },500)
       });
       setTimeout(() => {
         article.style.opacity = "0";
-      }, 200);
+      },60);
     } else {
       child.style.transform = "rotateZ(180deg)";
       article.style.display = "flex";
       setTimeout(() => {
         article.style.opacity = "1";
-      }, 55);
+      }, 75);
       setTimeout(() => {
         links.map((val) => {
           val.style.display = "block";
@@ -80,7 +81,7 @@ const Header = () => {
             val.style.opacity = "1";
           }, 100);
         });
-      }, 200);
+      }, 55);
     }
   }
   return (
@@ -95,7 +96,7 @@ const Header = () => {
         </aside>
       }
       <NavLink onClick= {navigate} to="/">
-        <img id="logo" src={dark_logo} alt="" />
+        <img id="logo" src={white_logo} alt="" />
       </NavLink>
       <nav id="nav">
         {screenSize < 1000 && <NavLink onClick= {navigate} to="/"> Home </NavLink>}
@@ -121,8 +122,8 @@ const Header = () => {
         <NavLink to="/work Experience">Work Experience Program</NavLink>
         <NavLink to="/contact">Contact Us</NavLink>
         <NavLink to="/faq">FAQs</NavLink>
-
-        <NavLink to= '/taster' className="taster "> Free Taster Session</NavLink>
+          <a href="https://digitalbusinesskonsult.com/tap-registration/" className="taster">Free Taster Session</a>
+        {/* <NavLink to= '/taster' className="taster "> Free Taster Session</NavLink> */}
 
         <NavLink onClick= {navigate} to="/login">Log In</NavLink>
         {/* <span className="search">
