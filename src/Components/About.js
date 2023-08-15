@@ -5,8 +5,6 @@ import abtImg from "./images/Img2.png";
 import whyImg from "./images/img3.png";
 import team1Img from "./images/img6.png";
 import team2Img from "./images/img7.png";
-
-import "bootstrap/dist/css/bootstrap.min.css";
 const About = () => {
   return (
     <div>
@@ -20,7 +18,7 @@ const About = () => {
             <img class="img-fluid" src={abtImg} alt="" />
           </div>
           <div
-            class=" about-us-col-2 col-lg-6 col-md-6 col-sm-12"
+            class=" about-us-col-2"
           >
             <h1>About Us</h1>
             <p>
@@ -39,8 +37,8 @@ const About = () => {
       </div>
 
       <div className="why-us">
-        <div className="row flex-items-2">
-          <div className="why-us-col-1 col-lg-6 col-md-6 col-sm-12 mt-2 img-fluid">
+        <div className="flex-items-2">
+          <div className="why-us-col-1">
             <h2>Why Digital Career Academy</h2>
             <p>
               <b>Comprehensive Curriculum</b> <br />
@@ -64,7 +62,7 @@ const About = () => {
             </p>
           </div>
           <img
-            className="why-us-col-2 col-lg-6 col-md-6 col-sm-12 img-fluid"
+            className="why-us-col-2"
             src={whyImg}
             alt=""
           />
@@ -73,8 +71,8 @@ const About = () => {
 
       <div className="team-wrapper">
         <h1>Meet Our Coaches</h1>
-        <div className="row team">
-          <div className="team-member-1 team-member col-lg-6 col-md-6 col-sm-12 img-fluid">
+        <div className="team">
+          <div className="team-member-1 team-member ">
             <div className="team-img">
               <img src={team1Img} alt="" />
             </div>
@@ -103,7 +101,7 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className="team-member-2 team-member col-lg-6 col-md-6 col-sm-12">
+          <div className="team-member-2 team-member">
             <div className="team-img">
               <img src={team2Img} alt="" />
             </div>

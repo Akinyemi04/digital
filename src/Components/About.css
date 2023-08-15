@@ -37,6 +37,7 @@ object-fit: cover;
     text-align: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin-left: -75px;
 }
 
 .about-us-col-1{
@@ -91,23 +92,27 @@ text-align: left;
     padding: 0px 0px 96px 0px;
 }
 
+.flex-items-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: -120px;
+}
+
 .why-us-col-1{
-    padding-left: 100px !important;
+    margin-left: 0;
+    width: 608px;
+    height: 838px;
 } 
 
-.why-us-col-1 .why-us-col-2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 0 !important;
-    width: 608px !important;
-    height: 838px !important;
+.why-us-col-2{
+    flex-basis: 40%;
 }
 
 .why-us img{
     padding-top: 0;
-    width: 608px !important;
-    max-height: 838px !important;
+    object-fit: contain;
 }
 
 
