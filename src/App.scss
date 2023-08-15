@@ -26,7 +26,7 @@ body {
   right: 0px;
   top: 200px;
   transition: all 0.3s linear;
-  &:hover{
+  &:hover {
     right: 0px !important;
   }
   a {
@@ -34,10 +34,10 @@ body {
     text-decoration: none;
     padding: 5px 50px 5px 10px;
     border-radius: 8px;
-    &:hover{
+    &:hover {
       opacity: 0.67;
     }
-    img{
+    img {
       position: relative;
       top: 5px;
     }
@@ -51,14 +51,13 @@ body {
     background: rgba(42, 98, 244, 0.6);
   }
   .telegram {
-
     background: rgba(89, 136, 151, 0.6);
   }
   .whatsapp {
-background: #3CFD66;
+    background: #3cfd66;
   }
   .book_call {
-background: rgba(51, 49, 132, 0.60);
+    background: rgba(51, 49, 132, 0.6);
   }
 }
 header {
@@ -197,7 +196,7 @@ header {
         z-index: 4;
       }
       &:hover {
-        color: #0082F0;
+        color: #0082f0;
       }
     }
     .courses {
@@ -240,8 +239,8 @@ header {
           font-weight: 700;
           letter-spacing: 0.15px;
           transition: all 0.4s linear;
-          &:hover{
-            opacity: 0.67;
+          &:hover {
+            color: #0082f0;
           }
         }
       }
@@ -366,7 +365,7 @@ footer {
 }
 
 @media screen and (max-width: "1000px") {
-  .connect_me{
+  .connect_me {
     z-index: 2;
   }
   header {
@@ -399,7 +398,7 @@ footer {
       background-color: white;
       transition: left 0.4s linear;
       a,
-      .taster {
+      .taster,p {
         border-radius: 4px;
         width: 80vw;
         &:hover {
@@ -418,7 +417,7 @@ footer {
           top: 0px;
           padding: 0;
           background-color: white;
-          padding-top: 10px;
+          // padding-top: 10px;
           a {
             color: #08083e;
             font-size: 14px;
@@ -430,11 +429,18 @@ footer {
       .search {
         color: black;
       }
-      a,
-      .courses {
+      a
+       {
         padding: 8px 0 8px 15px;
         font-weight: 500;
         color: black;
+      }
+      .courses{
+        font-weight: 500;
+        color: black;
+        p{
+          padding: 8px 0 8px 15px;
+        }
       }
     }
     .hamburger {
@@ -498,41 +504,39 @@ footer {
 }
 
 @media screen and (max-width: "500px") {
-
-  .connect_me{
+  .connect_me {
     display: grid;
     z-index: 2;
     position: sticky;
     grid-template-columns: repeat(auto-fit, minmax(88px, 1fr));
     top: 80px;
-    a{
+    a {
       border-radius: 0px;
       padding: 15px 5px;
       display: flex;
       align-items: center;
-      &:hover{
+      &:hover {
         opacity: 1;
       }
-      img{
+      img {
         top: 0px;
         margin-right: 5px;
       }
-      span{
+      span {
         font-size: 10px;
       }
     }
-    .enquiry{
-      background-color: #ED7029;
-
+    .enquiry {
+      background-color: #ed7029;
     }
-    .whatsapp{
-      background: #075E54;
+    .whatsapp {
+      background: #075e54;
     }
-    .telegram{
-      background-color: #229ED9;
+    .telegram {
+      background-color: #229ed9;
     }
-    .book_call{
-      background-color: #0431A5;
+    .book_call {
+      background-color: #0431a5;
     }
   }
   header {

@@ -56,7 +56,7 @@ body {
   background: rgba(89, 136, 151, 0.6);
 }
 .connect_me .whatsapp {
-  background: #3CFD66;
+  background: #3cfd66;
 }
 .connect_me .book_call {
   background: rgba(51, 49, 132, 0.6);
@@ -164,7 +164,7 @@ header nav .courses img {
 }
 header nav a:hover,
 header nav .courses:hover {
-  color: #0082F0;
+  color: #0082f0;
 }
 header nav .courses {
   color: white;
@@ -210,7 +210,7 @@ header nav .courses aside a {
   transition: all 0.4s linear;
 }
 header nav .courses aside a:hover {
-  opacity: 0.67;
+  color: #0082f0;
 }
 header nav .search {
   color: white;
@@ -355,12 +355,12 @@ footer .second .four p {
     transition: left 0.4s linear;
   }
   header nav a,
-  header nav .taster {
+  header nav .taster, header nav p {
     border-radius: 4px;
     width: 80vw;
   }
   header nav a:hover,
-  header nav .taster:hover {
+  header nav .taster:hover, header nav p:hover {
     background-color: #88c6fc;
   }
   header nav .courses p {
@@ -374,7 +374,6 @@ footer .second .four p {
     top: 0px;
     padding: 0;
     background-color: white;
-    padding-top: 10px;
   }
   header nav .courses aside a {
     color: #08083e;
@@ -385,11 +384,17 @@ footer .second .four p {
   header nav .search {
     color: black;
   }
-  header nav a,
-  header nav .courses {
+  header nav a {
     padding: 8px 0 8px 15px;
     font-weight: 500;
     color: black;
+  }
+  header nav .courses {
+    font-weight: 500;
+    color: black;
+  }
+  header nav .courses p {
+    padding: 8px 0 8px 15px;
   }
   header .hamburger {
     display: block;
@@ -465,16 +470,16 @@ footer .second .four p {
     font-size: 10px;
   }
   .connect_me .enquiry {
-    background-color: #ED7029;
+    background-color: #ed7029;
   }
   .connect_me .whatsapp {
-    background: #075E54;
+    background: #075e54;
   }
   .connect_me .telegram {
-    background-color: #229ED9;
+    background-color: #229ed9;
   }
   .connect_me .book_call {
-    background-color: #0431A5;
+    background-color: #0431a5;
   }
   header {
     padding: 9px 14px 0px 15px;
