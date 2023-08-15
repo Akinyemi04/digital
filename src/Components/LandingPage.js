@@ -14,8 +14,8 @@ import t1 from "./images/testimonial_1.png";
 import t2 from "./images/testimonial_2.png";
 import t3 from "./images/Rectangle 32.png";
 import t4 from "./images/image 18.png";
-import t5 from "./images/image 20.png";
-import t6 from "./images/image 22.png";
+// import t5 from "./images/image 20.png";
+// import t6 from "./images/image 22.png";
 import CloseIcon from "@mui/icons-material/Close";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore from "swiper";
@@ -55,6 +55,7 @@ const LandingPage = () => {
   const courses_max_height = useSelector((val) => {
     return val.landing.courses_max_height;
   });
+  console.log(courses_max_height)
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -139,16 +140,6 @@ const LandingPage = () => {
     <div id="landing">
       <ScrollToTop />
       <section className="intro">
-        {/* <article>
-          <h1>Did you Know?</h1>
-          <p>
-            Business Analysts are in high demand in UK and earn as much as £600
-            per day. Get trained in 6- weeks.
-          </p>
-          <a href="https://digitalbusinesskonsult.com/business-analysis-payment/">
-            Enrol
-          </a>
-        </article> */}
         {screen > 500 ? (
           <Swiper
             effect="cover"
