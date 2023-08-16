@@ -200,7 +200,6 @@ header nav .courses aside {
 }
 header nav .courses aside a {
   text-decoration: none;
-  margin-bottom: 9px;
   display: none;
   color: #6262a9;
   font-size: 20px;
@@ -208,9 +207,12 @@ header nav .courses aside a {
   font-weight: 700;
   letter-spacing: 0.15px;
   transition: all 0.4s linear;
+  border-radius: 10px;
+  padding: 8px 5px;
 }
 header nav .courses aside a:hover {
-  color: #0082f0;
+  color: white;
+  background-color: #0082f0;
 }
 header nav .search {
   color: white;
@@ -331,6 +333,7 @@ footer .second .four p {
   header #logo {
     position: relative;
     z-index: 4;
+    right: 2vw;
   }
   header .taster {
     background-color: white;
@@ -368,6 +371,9 @@ footer .second .four p {
     color: black;
     justify-content: space-between;
   }
+  header nav .courses p:hover {
+    color: #0082f0;
+  }
   header nav .courses aside {
     position: relative;
     left: 2vw;
@@ -395,6 +401,13 @@ footer .second .four p {
   }
   header nav .courses p {
     padding: 8px 0 8px 15px;
+  }
+  header nav .courses aside a {
+    padding: 8px 0px 8px 15px;
+  }
+  header nav .courses aside a:hover {
+    background-color: #88c6fc;
+    color: #0082f0;
   }
   header .hamburger {
     display: block;

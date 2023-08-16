@@ -231,7 +231,7 @@ header {
         transition: all 0.4s linear;
         a {
           text-decoration: none;
-          margin-bottom: 9px;
+          // margin-bottom: 9px;
           display: none;
           color: #6262a9;
           font-size: 20px;
@@ -239,8 +239,12 @@ header {
           font-weight: 700;
           letter-spacing: 0.15px;
           transition: all 0.4s linear;
+          border-radius: 10px;
+          padding: 8px 5px ;
           &:hover {
-            color: #0082f0;
+            color: white;
+            background-color: #0082f0;
+            
           }
         }
       }
@@ -375,6 +379,7 @@ footer {
     #logo {
       position: relative;
       z-index: 4;
+      right: 2vw;
     }
     .taster {
       background-color: white;
@@ -403,6 +408,7 @@ footer {
         width: 80vw;
         &:hover {
           background-color: #88c6fc;
+          
         }
       }
       .courses {
@@ -410,6 +416,9 @@ footer {
           width: 80vw;
           color: black;
           justify-content: space-between;
+          &:hover{
+            color: #0082f0;
+          }
         }
         aside {
           position: relative;
@@ -440,6 +449,15 @@ footer {
         color: black;
         p{
           padding: 8px 0 8px 15px;
+        }
+        aside{
+          a{
+            padding: 8px 0px 8px 15px;
+            &:hover{
+              background-color: #88c6fc;
+              color: #0082f0;
+            }
+          }
         }
       }
     }
