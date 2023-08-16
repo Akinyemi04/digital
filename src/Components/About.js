@@ -1,13 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./About.css";
 import bg from "./images/img1.jpeg";
 import abtImg from "./images/img4.jpg";
 import whyImg from "./images/img.jpg";
 import tImg from "./images/pic.png";
 import "bootstrap/dist/css/bootstrap.min.css";
+import ScrollToTop from "./ScrollToTop";
+import { useDispatch } from "react-redux";
+import { landing } from "./store";
+
+
 const About = () => {
+  const dispatch = useDispatch()
+
+  useEffect(()=>{
+    window.history.scrollRestoration = "manual";
+    dispatch(landing.counting_component(false))
+  },[dispatch])
   return (
     <div>
+      <ScrollToTop/>
       <div className="about-container">
         <img alt="HeroImg" src={bg} />
         <h1>About Us</h1>

@@ -57,13 +57,17 @@ const LandingPage = () => {
   });
   const dispatch = useDispatch();
 
+  const counting_component = useSelector((val) => {
+    return val.landing.counter_component;
+  });
+
   useEffect(() => {
     const element = document.getElementById("first_testimonial");
     dispatch(landing.update_story_height(element.offsetHeight + 60));
 
-    setTimeout(()=>{
-      element.style.height = `${element.offsetHeight +65}px`
-    },1200)
+    setTimeout(() => {
+      element.style.height = `${element.offsetHeight + 65}px`;
+    }, 1200);
     if (cookie_show) {
       setTimeout(() => {
         const cookie = document.getElementsByClassName("cookie_start")[0];
@@ -83,15 +87,18 @@ const LandingPage = () => {
   }, []);
 
   useEffect(() => {
-    window.addEventListener("scroll", ScrollCheck);
-    window.history.scrollRestoration = "manual";
-    if (screen < 501) {
-      dispatch(landing.change_success_counter(1));
+    dispatch(landing.counting_component(true))
+    if (counting_component) {
+      window.addEventListener("scroll", ScrollCheck);
+      window.history.scrollRestoration = "manual";
+      if (screen < 501) {
+        dispatch(landing.change_success_counter(1));
+      }
+      return () => {
+        window.removeEventListener("event", ScrollCheck);
+      };
     }
-    return () => {
-      window.removeEventListener("event", ScrollCheck);
-    };
-  }, []);
+  }, [counting_component]);
 
   function ScrollCheck() {
     let valueDisplays = document.querySelectorAll(".counter");
