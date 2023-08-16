@@ -55,7 +55,6 @@ const LandingPage = () => {
   const courses_max_height = useSelector((val) => {
     return val.landing.courses_max_height;
   });
-  console.log(courses_max_height)
   const dispatch = useDispatch();
 
   useEffect(() => {
