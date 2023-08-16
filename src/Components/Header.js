@@ -7,6 +7,8 @@ import white_logo from "./images/white-logo.png";
 const Header = () => {
   const screenSize = window.screen.availWidth;
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+
   function toggle_nav(e) {
     const nav = document.getElementById("nav");
     const body = document.getElementsByTagName("body")[0];
