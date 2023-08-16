@@ -57,9 +57,6 @@ const LandingPage = () => {
   });
   const dispatch = useDispatch();
 
-  const counting_component = useSelector((val) => {
-    return val.landing.counter_component;
-  });
 
   useEffect(() => {
     const element = document.getElementById("first_testimonial");
@@ -71,6 +68,7 @@ const LandingPage = () => {
     if (cookie_show) {
       setTimeout(() => {
         const cookie = document.getElementsByClassName("cookie_start")[0];
+        if(cookie)
         cookie.setAttribute("id", "cookiee");
       }, 800);
     }
@@ -86,45 +84,44 @@ const LandingPage = () => {
     }
   }, []);
 
-  useEffect(() => {
-    dispatch(landing.counting_component(true))
-    if (counting_component) {
+  useEffect(() => {  
       window.addEventListener("scroll", ScrollCheck);
       window.history.scrollRestoration = "manual";
       if (screen < 501) {
         dispatch(landing.change_success_counter(1));
       }
       return () => {
-        window.removeEventListener("event", ScrollCheck);
+        window.removeEventListener("scroll", ScrollCheck);
       };
-    }
-  }, [counting_component]);
+  }, [dispatch,]);
 
   function ScrollCheck() {
-    let valueDisplays = document.querySelectorAll(".counter");
-    const Elder = document.getElementById("parent");
-    if (Elder.parentElement.classList.contains("visible")) {
-      window.removeEventListener("scroll", ScrollCheck);
-      let interval = 1300;
-      valueDisplays.forEach((value) => {
-        let startValue = 0;
-        let endValue = parseInt(value.getAttribute("data-val"));
-        let duration = Math.floor(interval / endValue);
-        let counter = setInterval(function () {
-          if (endValue === 8000) {
-            startValue += 25;
-            value.textContent = startValue;
-          } else {
-            startValue += 1;
-            value.textContent = startValue;
-          }
-          if (startValue === endValue) {
-            value.nextElementSibling.style.opacity = "1";
-            clearInterval(counter);
-          }
-        }, duration);
-      });
-    }
+      let valueDisplays = document.querySelectorAll(".counter");
+      const Elder = document.getElementById("parent");
+      if (Elder.parentElement.classList.contains("visible")) {
+        window.removeEventListener("scroll", ScrollCheck);
+        let interval = 1300;
+        valueDisplays.forEach((value) => {
+          let startValue = 0;
+          let endValue = parseInt(value.getAttribute("data-val"));
+          let duration = Math.floor(interval / endValue);
+          let counter = setInterval(function () {
+            if (endValue === 8000) {
+              startValue += 25;
+              value.textContent = startValue;
+            } else {
+              startValue += 1;
+              value.textContent = startValue;
+            }
+            if (startValue === endValue) {
+              value.nextElementSibling.style.opacity = "1";
+              clearInterval(counter);
+            }
+          }, duration);
+        });
+      }
+    
+  
   }
 
   function cookie_control() {

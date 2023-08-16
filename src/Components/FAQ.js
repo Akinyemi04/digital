@@ -4,10 +4,15 @@ import { useDispatch } from "react-redux";
 
 const FAQ = () => {
   const dispatch = useDispatch()
+
   useEffect(()=>{
     window.history.scrollRestoration = "manual";
-    dispatch(landing.counting_component(false))
+    window.removeEventListener("scroll", ScrollCheck);
   },[dispatch])
+
+  function ScrollCheck(){
+
+  }
   return (
     <div>FAQ</div>
   )
