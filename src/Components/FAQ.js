@@ -26,42 +26,63 @@ const FAQ = () => {
             </div>
             <div className="tab">
                 <input type="checkbox" id="chck2"/>
-                <label className="tab-label" for="chck2">Are the courses at ..</label>
+                <label className="tab-label" for="chck2">Are the courses at Digital Careers Academy suitable for beginners with no technological backgrounds?</label>
                 <div className="tab-content">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!
                 </div>
             </div>
             <div className="tab">
                 <input type="checkbox" id="chck3"/>
-                <label className="tab-label" for="chck3">Item 3</label>
+                <label className="tab-label" for="chck3">Can I access the course material on any device?</label>
                 <div className="tab-content">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!
                 </div>
             </div>
             <div className="tab">
                 <input type="checkbox" id="chck4"/>
-                <label className="tab-label" for="chck4">Item 4</label>
+                <label className="tab-label" for="chck4">How does the enrollment process work?</label>
                 <div className="tab-content">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!
                 </div>
             </div>
             <div className="tab">
                 <input type="checkbox" id="chck5"/>
-                <label className="tab-label" for="chck5">Item 5</label>
+                <label className="tab-label" for="chck5">What types of tech careers are covered in the courses?</label>
                 <div className="tab-content">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!
                 </div>
             </div>
             <div className="tab">
                 <input type="checkbox" id="chck6"/>
-                <label className="tab-label" for="chck6">Item 6</label>
+                <label className="tab-label" for="chck6">How long do I have access to the course materials</label>
                 <div className="tab-content">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!
                 </div>
             </div>
             <div className="tab">
                 <input type="checkbox" id="chck7"/>
-                <label className="tab-label" for="chck7">Item 7</label>
+                <label className="tab-label" for="chck7">Are there any opportunities for hands-on experience or real-world projects?</label>
+                <div className="tab-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!
+                </div>
+            </div>
+            <div className="tab">
+                <input type="checkbox" id="chck7"/>
+                <label className="tab-label" for="chck7">Do you offer support?</label>
+                <div className="tab-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!
+                </div>
+            </div>
+            <div className="tab">
+                <input type="checkbox" id="chck7"/>
+                <label className="tab-label" for="chck7">Can I study at my own pace, or are there specific deadlines?</label>
+                <div className="tab-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!
+                </div>
+            </div>
+            <div className="tab">
+                <input type="checkbox" id="chck7"/>
+                <label className="tab-label" for="chck7">What set Digital Careers Academy apart from other e-learning platforms?</label>
                 <div className="tab-content">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!
                 </div>
