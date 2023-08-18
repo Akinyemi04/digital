@@ -57,7 +57,6 @@ const LandingPage = () => {
   });
   const dispatch = useDispatch();
 
-
   useEffect(() => {
     const element = document.getElementById("first_testimonial");
     dispatch(landing.update_story_height(element.offsetHeight + 60));
