@@ -1,12 +1,11 @@
-$midnight: #ffff;
-$clouds: #ffff;
-
-
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Epilogue:wght@100&family=Figtree:wght@300;400;500;600;700;800;900&family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,400;0,700;0,900;1,700&family=League+Spartan:wght@500;700;800&family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300&family=Public+Sans:ital,wght@0,300;0,700;1,400&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto&family=Source+Sans+3:wght@300;400;500;600;700;800;900&family=Ubuntu:wght@400;500;700&display=swap");
+ 
 
 
 .faq-container{
   width: 100%;
   height: auto;
+  font-family: "Open Sans", sans-serif;
   position: relative;
 }
 
@@ -19,9 +18,14 @@ object-fit: cover;
 
 .faq-container h1{
   position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 40%;
+  text-align: center;
+  width: inherit;
+  // top: 55%;
+  // left: 50%;
+  font-size: 60px;
+  font-weight: 700;
+  // transform: translate(-50%, -50%);
   color: white;
 }
 
@@ -35,23 +39,30 @@ input {
 // Layout
 .row {
   padding-top: 10px; 
+  padding-bottom: 500px;
 }
 
 /* Accordion styles */
-@media screen and (min-width:'1080px'){
-.tabs {
-  min-width: 800px;
-  padding: 0 300px 0 300px;
+@media screen and (max-width:'1080px'){
+  .row{
+    padding-bottom: 250px;
   
-} 
+  }
+  .tab{
+    min-width: 620px !important;
+  }
 }
 .tab {
-    margin-bottom: 5px;
+    
+    font-size:18px ;
+    font-weight: 600;
     border-radius: 8px;
     border: 1px solid rgb(226, 217, 217);
     overflow: hidden;
   box-shadow: 0 4px 4px -2px rgba(194, 186, 186, 0.5);
-  width: 100%;
+  width: 53vw;
+  min-width: 700px;
+  margin: 7px auto;
   overflow: hidden;
   &-label {
     display: flex;
@@ -76,7 +87,7 @@ input {
     max-height: 0;
     padding: 0 1em;
     color: rgb(27, 22, 22); 
-    background: $clouds;
+    background: #ffff;
     transition: all .35s;
   }
   &-close {
@@ -84,7 +95,7 @@ input {
     justify-content: flex-end;
     padding: 1em;
     font-size: 0.75em;
-    background: $midnight; 
+    background: #ffff; 
     cursor: pointer;
    
   }
