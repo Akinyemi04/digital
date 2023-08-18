@@ -1,6 +1,6 @@
 import React from 'react'
 import './faq.css';
-import bg from "./images/first_m.png";
+import bg from "./images/faqbg.png";
 
 import { landing } from "./store";
 import { useEffect } from "react";
@@ -20,7 +20,7 @@ function ScrollCheck(){
 
 }  
   return (
-    <div> 
+    <div className="faqmain"> 
         <div className='faq-container' >
             <img alt='FAQ' src={bg} />
             <h1>Frequently Asked Questions</h1>
