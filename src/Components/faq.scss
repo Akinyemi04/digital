@@ -1,9 +1,10 @@
-$midnight: #ffff;
-$clouds: #ffff;
+
+
+
 
 .faqmain{
   color:#252525;
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 20px;
   font-style: normal;
  /* font-weight: 600; */
@@ -83,7 +84,7 @@ input {
     max-height: 0;
     padding: 0 1em;
     color: rgb(27, 22, 22); 
-    background: $clouds;
+    background: #ffff;
     transition: all .35s;
   }
   &-close {
@@ -91,7 +92,7 @@ input {
     justify-content: flex-end;
     padding: 1em;
     font-size: 0.75em;
-    background: $midnight; 
+    background: #ffff; 
     cursor: pointer;
    
   }
