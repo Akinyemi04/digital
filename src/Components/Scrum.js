@@ -2,7 +2,7 @@ import React from 'react'
 
 const Scrum = () => {
   return (
-    <div>Scrum</div>
+    <div>hello scrum where are you now</div>
   )
 }
 
