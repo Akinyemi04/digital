@@ -1,6 +1,6 @@
 import React from 'react'
 import './faq.css';
-import bg from "./images/first_m.png";
+import bg from "./images/faqbg.png";
 
 import { landing } from "./store";
 import { useEffect } from "react";
@@ -20,14 +20,14 @@ function ScrollCheck(){
 
 }  
   return (
-    <div> 
+    <div className=""> 
         <div className='faq-container' >
             <img alt='FAQ' src={bg} />
             <h1>Frequently Asked Questions</h1>
         </div>
 
 
-    <div className="row">
+    <div className="row faqmain">
         <div className="col">  
             <div class="tabs">
             <div className="tab">
@@ -80,22 +80,22 @@ function ScrollCheck(){
                 </div>
             </div>
             <div className="tab">
-                <input type="checkbox" id="chck7"/>
-                <label className="tab-label" for="chck7">Do you offer support?</label>
+                <input type="checkbox" id="chck8"/>
+                <label className="tab-label" for="chck8">Do you offer support?</label>
                 <div className="tab-content">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!
                 </div>
             </div>
             <div className="tab">
-                <input type="checkbox" id="chck7"/>
-                <label className="tab-label" for="chck7">Can I study at my own pace, or are there specific deadlines?</label>
+                <input type="checkbox" id="chck9"/>
+                <label className="tab-label" for="chck9">Can I study at my own pace, or are there specific deadlines?</label>
                 <div className="tab-content">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!
                 </div>
             </div>
             <div className="tab">
-                <input type="checkbox" id="chck7"/>
-                <label className="tab-label" for="chck7">What set Digital Careers Academy apart from other e-learning platforms?</label>
+                <input type="checkbox" id="chck10"/>
+                <label className="tab-label" for="chck10">What set Digital Careers Academy apart from other e-learning platforms?</label>
                 <div className="tab-content">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!
                 </div>

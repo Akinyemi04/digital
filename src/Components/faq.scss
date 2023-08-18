@@ -1,11 +1,16 @@
-$midnight: #ffff;
-$clouds: #ffff;
 
-body {
-  padding: 0 1em 1em;
+
+
+
+.faqmain{
+  color:#252525;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+ /* font-weight: 600; */
+  line-height: normal;
+  letter-spacing: 0.15px;
 }
-
-
 .faq-container{
   width: 100%;
   height: auto;
@@ -37,6 +42,7 @@ input {
 // Layout
 .row {
   padding-top: 10px; 
+  padding-bottom: 500px;
 }
 
 /* Accordion styles */
@@ -78,7 +84,7 @@ input {
     max-height: 0;
     padding: 0 1em;
     color: rgb(27, 22, 22); 
-    background: $clouds;
+    background: #ffff;
     transition: all .35s;
   }
   &-close {
@@ -86,7 +92,7 @@ input {
     justify-content: flex-end;
     padding: 1em;
     font-size: 0.75em;
-    background: $midnight; 
+    background: #ffff; 
     cursor: pointer;
    
   }

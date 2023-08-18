@@ -1,6 +1,12 @@
 @charset "UTF-8";
-body {
-  padding: 0 1em 1em;
+.faqmain {
+  color: #252525;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  /* font-weight: 600; */
+  line-height: normal;
+  letter-spacing: 0.15px;
 }
 
 .faq-container {
@@ -33,6 +39,7 @@ input {
 
 .row {
   padding-top: 10px;
+  padding-bottom: 500px;
 }
 
 /* Accordion styles */
