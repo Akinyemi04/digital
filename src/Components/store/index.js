@@ -7,7 +7,8 @@ const landingDetails = createSlice({
         story_height:'',
         cookie_show : true,
         courses_max_height:'auto',
-        courses_height:'auto'
+        courses_height:'auto',
+        counter_component:true
     },
     reducers:{
         change_success_counter(state,action){
@@ -39,6 +40,12 @@ const landingDetails = createSlice({
             return{
                 ...state,
                 courses_height:action.payload
+            }
+        },
+        counting_component(state,action){
+            return{
+                ...state,
+                counter_component:action.payload
             }
         }
     }

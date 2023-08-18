@@ -1,24 +1,6 @@
 import React from 'react'
-import './faq.css';
-import bg from "./images/first_m.png";
-
-import { landing } from "./store";
-import { useEffect } from "react";
-import { useDispatch } from "react-redux";
-
-
 
 const FAQ = () => {
-  const dispatch = useDispatch()
-
-  useEffect(()=>{
-    window.history.scrollRestoration = "manual";
-    window.removeEventListener("scroll", ScrollCheck);
-  },[dispatch])
-
-function ScrollCheck(){
-
-}  
   return (
     <div> 
         <div className='faq-container' >
