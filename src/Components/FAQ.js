@@ -21,7 +21,7 @@ const FAQ = () => {
                 <input type="checkbox" id="chck1"/>
                 <label className="tab-label" for="chck1">What is Digital Careers Academy and what does it offer</label>
                 <div className="tab-content">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, reiciendis!
+                Digital Careers Academy is an e-learning platform ....
                 </div>
             </div>
             <div className="tab">
