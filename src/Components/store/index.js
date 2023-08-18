@@ -7,7 +7,12 @@ const landingDetails = createSlice({
         story_height:'',
         cookie_show : true,
         courses_max_height:'auto',
+<<<<<<< HEAD
         courses_height:'auto'
+=======
+        courses_height:'auto',
+        counter_component:true
+>>>>>>> b60b4612cf673d2e385a78d379934fdba60c9548
     },
     reducers:{
         change_success_counter(state,action){
@@ -40,6 +45,15 @@ const landingDetails = createSlice({
                 ...state,
                 courses_height:action.payload
             }
+<<<<<<< HEAD
+=======
+        },
+        counting_component(state,action){
+            return{
+                ...state,
+                counter_component:action.payload
+            }
+>>>>>>> b60b4612cf673d2e385a78d379934fdba60c9548
         }
     }
 })

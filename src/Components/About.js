@@ -20,15 +20,15 @@ const About = () => {
           <div
             class=" about-us-col-2"
           >
-            <h1>About Us</h1>
+            <h2>About Us</h2>
             <p>
-              Digital Careers Academy coaches and mentor candidates through the
-              entire development cycle of products from design to launch in an
-              agile environment. We have a plethora of vetted digital career
-              mentors to guide you in securing high-paying digital roles. Our
-              training facilitators are competent in Product Management,
-              Business Analysis, Scrum Master, Product Ownership, Data
-              Analytics, and Data Protection. Our interns gain work experience
+              Digital Careers Academy coaches and mentor candidates<br /> through the
+              entire development cycle of products from design <br /> to launch in an
+              agile environment. We have a plethora of<br /> vetted digital career
+              mentors to guide you in securinghigh <br /> -paying digital roles. <br /> Our
+              training facilitators are competent in Product <br /> Management,
+              Business Analysis, Scrum Master, Product<br /> Ownership, Data
+              Analytics, and Data Protection. Our interns gain <br /> work experience
               by using collaborative and product development tools in a
               simulated environment.
             </p>
@@ -44,7 +44,7 @@ const About = () => {
               <b>Comprehensive Curriculum</b> <br />
                We offer comprehensive training in
               Business Analysis, Scrum Master, & Data Analytics. <br />
-               Practical Hands-on Experience. 
+              <b>Practical Hands-on Experience</b>. <br />
                Our interns gain work experience by using
               collaborative and product development tools in an interactive simulated environment. <br />
 
@@ -58,7 +58,7 @@ const About = () => {
               guidance. <br /> 
               <b>Affordable Fees</b>  <br /> 
               Budget friendly fees. We also offer
-              Interest free payment plans.
+              Interest free<br /> payment plans.
             </p>
           </div>
           <img
@@ -70,9 +70,9 @@ const About = () => {
       </div>
 
       <div className="team-wrapper">
-        <h1>Meet Our Coaches</h1>
+        <h2>Meet Our Coaches</h2>
         <div className="team">
-          <div className="team-member-1 team-member ">
+          <div className="team-member-1">
             <div className="team-img">
               <img src={team1Img} alt="" />
             </div>
@@ -101,7 +101,7 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className="team-member-2 team-member">
+          <div className="team-member-2">
             <div className="team-img">
               <img src={team2Img} alt="" />
             </div>
