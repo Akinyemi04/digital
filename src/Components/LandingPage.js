@@ -14,8 +14,8 @@ import t1 from "./images/testimonial_1.png";
 import t2 from "./images/testimonial_2.png";
 import t3 from "./images/Rectangle 32.png";
 import t4 from "./images/image 18.png";
-import t5 from "./images/image 20.png";
-import t6 from "./images/image 22.png";
+// import t5 from "./images/image 20.png";
+// import t6 from "./images/image 22.png";
 import CloseIcon from "@mui/icons-material/Close";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore from "swiper";
@@ -61,12 +61,13 @@ const LandingPage = () => {
     const element = document.getElementById("first_testimonial");
     dispatch(landing.update_story_height(element.offsetHeight + 60));
 
-    setTimeout(()=>{
-      element.style.height = `${element.offsetHeight +65}px`
-    },1200)
+    setTimeout(() => {
+      element.style.height = `${element.offsetHeight + 65}px`;
+    }, 1200);
     if (cookie_show) {
       setTimeout(() => {
         const cookie = document.getElementsByClassName("cookie_start")[0];
+        if(cookie)
         cookie.setAttribute("id", "cookiee");
       }, 800);
     }
@@ -82,42 +83,44 @@ const LandingPage = () => {
     }
   }, []);
 
-  useEffect(() => {
-    window.addEventListener("scroll", ScrollCheck);
-    window.history.scrollRestoration = "manual";
-    if (screen < 501) {
-      dispatch(landing.change_success_counter(1));
-    }
-    return () => {
-      window.removeEventListener("event", ScrollCheck);
-    };
-  }, []);
+  useEffect(() => {  
+      window.addEventListener("scroll", ScrollCheck);
+      window.history.scrollRestoration = "manual";
+      if (screen < 501) {
+        dispatch(landing.change_success_counter(1));
+      }
+      return () => {
+        window.removeEventListener("scroll", ScrollCheck);
+      };
+  }, [dispatch,]);
 
   function ScrollCheck() {
-    let valueDisplays = document.querySelectorAll(".counter");
-    const Elder = document.getElementById("parent");
-    if (Elder.parentElement.classList.contains("visible")) {
-      window.removeEventListener("scroll", ScrollCheck);
-      let interval = 1300;
-      valueDisplays.forEach((value) => {
-        let startValue = 0;
-        let endValue = parseInt(value.getAttribute("data-val"));
-        let duration = Math.floor(interval / endValue);
-        let counter = setInterval(function () {
-          if (endValue === 8000) {
-            startValue += 25;
-            value.textContent = startValue;
-          } else {
-            startValue += 1;
-            value.textContent = startValue;
-          }
-          if (startValue === endValue) {
-            value.nextElementSibling.style.opacity = "1";
-            clearInterval(counter);
-          }
-        }, duration);
-      });
-    }
+      let valueDisplays = document.querySelectorAll(".counter");
+      const Elder = document.getElementById("parent");
+      if (Elder.parentElement.classList.contains("visible")) {
+        window.removeEventListener("scroll", ScrollCheck);
+        let interval = 1300;
+        valueDisplays.forEach((value) => {
+          let startValue = 0;
+          let endValue = parseInt(value.getAttribute("data-val"));
+          let duration = Math.floor(interval / endValue);
+          let counter = setInterval(function () {
+            if (endValue === 8000) {
+              startValue += 25;
+              value.textContent = startValue;
+            } else {
+              startValue += 1;
+              value.textContent = startValue;
+            }
+            if (startValue === endValue) {
+              value.nextElementSibling.style.opacity = "1";
+              clearInterval(counter);
+            }
+          }, duration);
+        });
+      }
+    
+  
   }
 
   function cookie_control() {
@@ -139,16 +142,6 @@ const LandingPage = () => {
     <div id="landing">
       <ScrollToTop />
       <section className="intro">
-        {/* <article>
-          <h1>Did you Know?</h1>
-          <p>
-            Business Analysts are in high demand in UK and earn as much as £600
-            per day. Get trained in 6- weeks.
-          </p>
-          <a href="https://digitalbusinesskonsult.com/business-analysis-payment/">
-            Enrol
-          </a>
-        </article> */}
         {screen > 500 ? (
           <Swiper
             effect="cover"
@@ -203,7 +196,6 @@ const LandingPage = () => {
             effect="cover"
             spaceBetween={50}
             autoplay={{ delay: 3000 }}
-            scrollbar={{ draggable: true }}
             slidesPerView={1}
           >
             <SwiperSlide>
@@ -214,10 +206,14 @@ const LandingPage = () => {
                   Business Analysts are in high demand in UK and earn as much as
                   £600 per day. Get trained in 6- weeks.
                 </p>
-                <a href="https://digitalbusinesskonsult.com/business-analysis-payment/">
-                  Enrol
-                </a>
-                <img src={img2} alt="" />
+                <aside>
+                  <a href="https://digitalbusinesskonsult.com/business-analysis-payment/">
+                    Enrol
+                  </a>
+                  <a href="" id="mobile_taste">
+                    Free Taster Session
+                  </a>
+                </aside>
               </article>
             </SwiperSlide>
             <SwiperSlide>
@@ -228,9 +224,14 @@ const LandingPage = () => {
                   You can be trained to become a Scrum Master in 6weeks. Scrum
                   Masters can earn £650 per day in UK.
                 </p>
-                <a href="https://digitalbusinesskonsult.com/business-analysis-payment/">
-                  Enrol
-                </a>
+                <aside>
+                  <a href="https://digitalbusinesskonsult.com/business-analysis-payment/">
+                    Enrol
+                  </a>
+                  <a href="" id="mobile_taste">
+                    Free Taster Session
+                  </a>
+                </aside>
               </article>
             </SwiperSlide>
             <SwiperSlide>
@@ -241,9 +242,14 @@ const LandingPage = () => {
                   You can be trained to become a Scrum Master in 6weeks. Scrum
                   Masters can earn £650 per day in UK.
                 </p>
-                <a href="https://digitalbusinesskonsult.com/business-analysis-payment/">
-                  Enrol
-                </a>
+                <aside>
+                  <a href="https://digitalbusinesskonsult.com/business-analysis-payment/">
+                    Enrol
+                  </a>
+                  <a href="" id="mobile_taste">
+                    Free Taster Session
+                  </a>
+                </aside>
               </article>
             </SwiperSlide>
           </Swiper>
@@ -441,7 +447,7 @@ const LandingPage = () => {
         </Swiper>
       </section>
       <AnimationOnScroll animateIn="visible">
-        {screen > 500 ? (
+         
           <section id="parent" className="info">
             <div>
               <p className="number">
@@ -480,61 +486,7 @@ const LandingPage = () => {
               <p className="detail">Career Mentor</p>
             </div>
           </section>
-        ) : (
-          <Swiper
-            effect="cover"
-            spaceBetween={50}
-            autoplay={{ delay: 3000 }}
-            slidesPerView={1}
-            className="info"
-            id="parent"
-          >
-            <SwiperSlide>
-              <div>
-                <p className="number">
-                  <span data-val="200" className="counter">
-                    000
-                  </span>
-                  <span className="plus">+</span>
-                </p>
-                <p className="detail">Success Stories</p>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div>
-                <p className="number">
-                  <span data-val="100" className="counter">
-                    000
-                  </span>
-                  <span className="plus">+</span>
-                </p>
-                <p className="detail">Candidates</p>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div>
-                <p className="number">
-                  <span data-val="45" className="counter">
-                    00
-                  </span>
-                  <span>+</span>
-                </p>
-                <p className="detail">Digital Products </p>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div>
-                <p className="number">
-                  <span data-val="10" className="counter">
-                    00
-                  </span>
-                  <span>+</span>
-                </p>
-                <p className="detail">Career Mentor</p>
-              </div>
-            </SwiperSlide>
-          </Swiper>
-        )}
+        )  
       </AnimationOnScroll>
       {cookie_show && (
         <section className="cookie_start">

@@ -198,6 +198,9 @@
   letter-spacing: 0.15px;
   text-align: center;
 }
+#landing .intro article aside #mobile_taste {
+  display: none;
+}
 #landing .intro article a {
   border-radius: 8px;
   background: linear-gradient(90deg, #0082f0 17.19%, #199ef3 65.1%, #6fb6f6 97.4%);
@@ -422,7 +425,9 @@
     font-size: 20px;
   }
   #landing .choose_us {
-    flex-direction: column-reverse;
+    flex-direction: column;
+    position: relative;
+    padding-top: 60px;
     background: linear-gradient(180deg, rgba(185, 222, 254, 0.25) 0%, rgba(185, 222, 254, 0) 100%);
     position: relative;
   }
@@ -432,6 +437,7 @@
   }
   #landing .choose_us article {
     width: 88vw;
+    margin-top: 18px;
   }
   #landing .choose_us article div {
     position: absolute;
@@ -456,6 +462,10 @@
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.5px;
+    position: absolute;
+    top: 24px;
+    width: inherit;
+    text-align: center;
   }
   #landing .info {
     flex-wrap: wrap;
@@ -512,7 +522,7 @@
     padding-top: 141px;
   }
   #landing .courses main article .swipe_up {
-    padding: 50px 20px 30px;
+    padding: 22px 20px 30px;
   }
   #landing .courses main article .swipe_up h4 {
     font-size: 20px;
@@ -572,6 +582,20 @@
   #landing .intro article a {
     font-size: 16px;
     max-width: 210px;
+    padding: 10px 40px;
+  }
+  #landing .intro article aside {
+    display: flex;
+  }
+  #landing .intro article aside #mobile_taste {
+    display: block;
+    font-size: 16px;
+    color: #0082f0;
+    border: 1px solid #0082f0;
+    border-radius: 8px;
+    background: white;
+    padding: 10px;
+    margin-left: 17px;
   }
   #landing .choose_us {
     position: relative;
@@ -610,12 +634,11 @@
     border: 1px solid #88c6fc;
   }
   #landing .info {
-    width: 250px;
-    flex-wrap: nowrap;
+    width: auto;
+    flex-wrap: wrap;
   }
   #landing .info div {
-    width: 200px;
-    margin-bottom: 0;
+    margin-bottom: 32px;
   }
   #landing .info div .number {
     font-size: 48px;
@@ -626,5 +649,6 @@
   #landing .info div .detail {
     font-size: 20px;
     line-height: 40px;
+    margin-bottom: 10px;
   }
 }/*# sourceMappingURL=Landing.css.map */

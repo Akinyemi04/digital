@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Epilogue:wght@100&family=Figtree:wght@300;400;500;600;700;800;900&family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,400;0,700;0,900;1,700&family=League+Spartan:wght@500;700;800&family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300&family=Pavanam&family=Public+Sans:ital,wght@0,300;0,700;1,400&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto&family=Source+Sans+3:wght@300;400;500;600;700;800;900&family=Ubuntu:wght@400;500;700&display=swap");
+
+#cookie {
+  background: linear-gradient(180deg, #b9defe 0%, rgba(185, 222, 254, 0) 100%);
+  min-height: 100vh;
+  padding: 0 7vw 196px ;
+  main {
+    border-top: 5px solid var(--dark-grey-text-color, #252525);
+    border-right: 5px solid var(--dark-grey-text-color, #252525);
+    background: var(--secondary-color, #fefeff);
+    padding: 96px 5.5vw 96px 4.3vw;
+    position: relative;
+    h1 {
+      font-size: 48px;
+      font-weight: 400;
+      margin-bottom: 26px;
+    }
+    p {
+      font-family: "Pavanam", sans-serif;
+      font-size: 27px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 36px;
+    }
+    .circle {
+      position: absolute;
+      right: 3vw;
+      color: #868688;
+      top: 96px;
+    }
+    .line {
+      position: absolute;
+      right: 3.2vw;
+      color: #d9d9d9;
+      border-radius: 10px;
+      top: 305px;
+      font-size: x-large;
+      transform: rotate(90deg) scale(23.5, 3.2);
+    }
+  }
+}
