@@ -8,7 +8,6 @@ import { useDispatch } from "react-redux";
 
 
 
-
 const FAQ = () => {
   const dispatch = useDispatch()
 
@@ -19,7 +18,7 @@ const FAQ = () => {
 
 function ScrollCheck(){
 
-  
+}  
   return (
     <div> 
         <div className='faq-container' >
@@ -108,7 +107,7 @@ function ScrollCheck(){
 </div>
   )
 }
-}
+
 export default FAQ;
 
 
