@@ -5,10 +5,6 @@ import abtImg from "./images/img4.jpg";
 import whyImg from "./images/img.jpg";
 import tImg from "./images/pic.png";
 import "bootstrap/dist/css/bootstrap.min.css";
-import ScrollToTop from "./ScrollToTop";
-import { useDispatch,useSelector } from "react-redux";
-
-
 const About = () => {
   const dispatch = useDispatch()
 
