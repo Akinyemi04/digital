@@ -27,7 +27,7 @@ const Header = () => {
     const icon = document.getElementById("nav-icon4");
     const body = document.getElementsByTagName("body")[0];
     if(screenSize < 501){
-      nav.style.left = "-60vw";
+      nav.style.left = "-100vw";
       icon.classList.toggle("open");
       body.style.overflowY = "scroll";
     }

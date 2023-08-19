@@ -56,11 +56,7 @@ body {
   background: rgba(89, 136, 151, 0.6);
 }
 .connect_me .whatsapp {
-<<<<<<< HEAD
-  background: #3CFD66;
-=======
   background: #3cfd66;
->>>>>>> b60b4612cf673d2e385a78d379934fdba60c9548
 }
 .connect_me .book_call {
   background: rgba(51, 49, 132, 0.6);
@@ -168,11 +164,7 @@ header nav .courses img {
 }
 header nav a:hover,
 header nav .courses:hover {
-<<<<<<< HEAD
-  color: #0082F0;
-=======
   color: #0082f0;
->>>>>>> b60b4612cf673d2e385a78d379934fdba60c9548
 }
 header nav .courses {
   color: white;
@@ -208,10 +200,6 @@ header nav .courses aside {
 }
 header nav .courses aside a {
   text-decoration: none;
-<<<<<<< HEAD
-  margin-bottom: 9px;
-=======
->>>>>>> b60b4612cf673d2e385a78d379934fdba60c9548
   display: none;
   color: #6262a9;
   font-size: 20px;
@@ -219,18 +207,12 @@ header nav .courses aside a {
   font-weight: 700;
   letter-spacing: 0.15px;
   transition: all 0.4s linear;
-<<<<<<< HEAD
-}
-header nav .courses aside a:hover {
-  opacity: 0.67;
-=======
   border-radius: 10px;
   padding: 8px 5px;
 }
 header nav .courses aside a:hover {
   color: white;
   background-color: #0082f0;
->>>>>>> b60b4612cf673d2e385a78d379934fdba60c9548
 }
 header nav .search {
   color: white;
@@ -244,10 +226,10 @@ header .taster {
   font-weight: 600;
   text-decoration: none;
   letter-spacing: 0.15px;
-  transition: opacity 0.4s;
+  transition: all 0.4s;
 }
 header .taster:hover {
-  opacity: 0.67;
+  background: linear-gradient(90deg, #0082f0 17.19%, #199ef3 65.1%, #6fb6f6 97.4%);
 }
 
 footer {
@@ -351,10 +333,7 @@ footer .second .four p {
   header #logo {
     position: relative;
     z-index: 4;
-<<<<<<< HEAD
-=======
     right: 2vw;
->>>>>>> b60b4612cf673d2e385a78d379934fdba60c9548
   }
   header .taster {
     background-color: white;
@@ -379,20 +358,12 @@ footer .second .four p {
     transition: left 0.4s linear;
   }
   header nav a,
-<<<<<<< HEAD
-  header nav .taster {
-=======
   header nav .taster, header nav p {
->>>>>>> b60b4612cf673d2e385a78d379934fdba60c9548
     border-radius: 4px;
     width: 80vw;
   }
   header nav a:hover,
-<<<<<<< HEAD
-  header nav .taster:hover {
-=======
   header nav .taster:hover, header nav p:hover {
->>>>>>> b60b4612cf673d2e385a78d379934fdba60c9548
     background-color: #88c6fc;
   }
   header nav .courses p {
@@ -400,22 +371,15 @@ footer .second .four p {
     color: black;
     justify-content: space-between;
   }
-<<<<<<< HEAD
-=======
   header nav .courses p:hover {
     color: #0082f0;
   }
->>>>>>> b60b4612cf673d2e385a78d379934fdba60c9548
   header nav .courses aside {
     position: relative;
     left: 2vw;
     top: 0px;
     padding: 0;
     background-color: white;
-<<<<<<< HEAD
-    padding-top: 10px;
-=======
->>>>>>> b60b4612cf673d2e385a78d379934fdba60c9548
   }
   header nav .courses aside a {
     color: #08083e;
@@ -426,18 +390,11 @@ footer .second .four p {
   header nav .search {
     color: black;
   }
-<<<<<<< HEAD
-  header nav a,
-  header nav .courses {
-=======
   header nav a {
->>>>>>> b60b4612cf673d2e385a78d379934fdba60c9548
     padding: 8px 0 8px 15px;
     font-weight: 500;
     color: black;
   }
-<<<<<<< HEAD
-=======
   header nav .courses {
     font-weight: 500;
     color: black;
@@ -452,7 +409,6 @@ footer .second .four p {
     background-color: #88c6fc;
     color: #0082f0;
   }
->>>>>>> b60b4612cf673d2e385a78d379934fdba60c9548
   header .hamburger {
     display: block;
     right: 15px;
@@ -527,18 +483,6 @@ footer .second .four p {
     font-size: 10px;
   }
   .connect_me .enquiry {
-<<<<<<< HEAD
-    background-color: #ED7029;
-  }
-  .connect_me .whatsapp {
-    background: #075E54;
-  }
-  .connect_me .telegram {
-    background-color: #229ED9;
-  }
-  .connect_me .book_call {
-    background-color: #0431A5;
-=======
     background-color: #ed7029;
   }
   .connect_me .whatsapp {
@@ -549,7 +493,6 @@ footer .second .four p {
   }
   .connect_me .book_call {
     background-color: #0431a5;
->>>>>>> b60b4612cf673d2e385a78d379934fdba60c9548
   }
   header {
     padding: 9px 14px 0px 15px;
