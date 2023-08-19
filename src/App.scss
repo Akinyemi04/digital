@@ -48,16 +48,16 @@ body {
     }
   }
   .enquiry {
-    background: rgba(42, 98, 244, 0.6);
+    background: #ED7029;
   }
   .telegram {
-    background: rgba(89, 136, 151, 0.6);
+    background: #229ED9;
   }
   .whatsapp {
-    background: #3cfd66;
+    background:#075E54;
   }
   .book_call {
-    background: rgba(51, 49, 132, 0.6);
+    background: #0431A5;
   }
 }
 header {
@@ -580,8 +580,12 @@ footer {
       }
     }
     .taster {
-      padding: 16px 5px;
-      font-size: 14px;
+      padding: 16px 15px;
+      font-size: 16px;
+      &:hover{
+        background: #88c6fc;
+        color: #0082f0;
+      }
     }
   }
   footer {

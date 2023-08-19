@@ -7,15 +7,10 @@ import mobile_lady from "./images/mobile.png";
 import img1 from "./images/first_m.png";
 import img2 from "./images/second_m.png";
 import img3 from "./images/unsplash_Jy2mwPtOCOU.png";
-import mobile1 from "./images/mobile_1.png";
-import mobile2 from "./images/mobile_2.png";
-import mobile3 from "./images/mobile_3.png";
 import t1 from "./images/testimonial_1.png";
 import t2 from "./images/testimonial_2.png";
 import t3 from "./images/Rectangle 32.png";
 import t4 from "./images/image 18.png";
-// import t5 from "./images/image 20.png";
-// import t6 from "./images/image 22.png";
 import CloseIcon from "@mui/icons-material/Close";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore from "swiper";
@@ -71,7 +66,7 @@ const LandingPage = () => {
         cookie.setAttribute("id", "cookiee");
       }, 800);
     }
-  }, []);
+  }, [cookie_show,dispatch]);
 
   useEffect(() => {
     if (screen < 1680) {
@@ -81,7 +76,7 @@ const LandingPage = () => {
         dispatch(landing.reset_course_height(element.offsetHeight));
       }, 1000);
     }
-  }, []);
+  }, [screen,dispatch]);
 
   useEffect(() => {  
       window.addEventListener("scroll", ScrollCheck);
@@ -92,7 +87,7 @@ const LandingPage = () => {
       return () => {
         window.removeEventListener("scroll", ScrollCheck);
       };
-  }, [dispatch,]);
+  }, [dispatch,screen,ScrollCheck]);
 
   function ScrollCheck() {
       let valueDisplays = document.querySelectorAll(".counter");

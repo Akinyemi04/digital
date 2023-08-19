@@ -50,16 +50,16 @@ body {
   font-weight: 600;
 }
 .connect_me .enquiry {
-  background: rgba(42, 98, 244, 0.6);
+  background: #ED7029;
 }
 .connect_me .telegram {
-  background: rgba(89, 136, 151, 0.6);
+  background: #229ED9;
 }
 .connect_me .whatsapp {
-  background: #3cfd66;
+  background: #075E54;
 }
 .connect_me .book_call {
-  background: rgba(51, 49, 132, 0.6);
+  background: #0431A5;
 }
 
 header {
@@ -514,8 +514,12 @@ footer .second .four p {
     bottom: 28px;
   }
   header .taster {
-    padding: 16px 5px;
-    font-size: 14px;
+    padding: 16px 15px;
+    font-size: 16px;
+  }
+  header .taster:hover {
+    background: #88c6fc;
+    color: #0082f0;
   }
   footer {
     background: linear-gradient(142deg, rgba(5, 17, 58, 0.05) 9%, #05113a 16.35%);
