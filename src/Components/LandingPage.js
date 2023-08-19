@@ -199,7 +199,7 @@ const LandingPage = () => {
             slidesPerView={1}
           >
             <SwiperSlide>
-              <img src={mobile1} alt="" />
+              <img src={img1} alt="" />
               <article>
                 <h1>Did you Know?</h1>
                 <p>
@@ -217,7 +217,7 @@ const LandingPage = () => {
               </article>
             </SwiperSlide>
             <SwiperSlide>
-              <img src={mobile2} alt="" />
+              <img src={img2} alt="" />
               <article>
                 <h1>Did you Know?</h1>
                 <p>
@@ -235,7 +235,7 @@ const LandingPage = () => {
               </article>
             </SwiperSlide>
             <SwiperSlide>
-              <img src={mobile3} alt="" />
+              <img src={img3} alt="" />
               <article>
                 <h1>Did you Know?</h1>
                 <p>

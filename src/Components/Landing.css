@@ -559,7 +559,7 @@
     font-size: 16px;
   }
   #landing .intro img {
-    height: 446px;
+    height: 356px;
   }
   #landing .intro article {
     position: relative;
@@ -582,6 +582,7 @@
   #landing .intro article a {
     font-size: 16px;
     max-width: 210px;
+    min-width: 155px;
     padding: 10px 40px;
   }
   #landing .intro article aside {
@@ -627,8 +628,12 @@
   }
   #landing .choose_us article div .read_more {
     padding: 1px 15px;
-    border: none;
-    text-decoration: underline;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #0082f0;
+    min-width: 150px;
+    border: 1px solid var(--accent-color, #0082f0);
   }
   #landing .choose_us article div .enrol {
     border: 1px solid #88c6fc;

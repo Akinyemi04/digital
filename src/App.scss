@@ -262,9 +262,14 @@ header {
     font-weight: 600;
     text-decoration: none;
     letter-spacing: 0.15px;
-    transition: opacity 0.4s;
+    transition: all 0.4s;
     &:hover {
-      opacity: 0.67;
+      background: linear-gradient(
+        90deg,
+        #0082f0 17.19%,
+        #199ef3 65.1%,
+        #6fb6f6 97.4%
+      );
     }
   }
 }
