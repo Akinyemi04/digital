@@ -43,7 +43,7 @@ const LandingPage = () => {
 
   const story_height = useSelector((val) => {
     return val.landing.story_height;
-  });
+  }); // since different testimonial have different height ,i'm using the height of the most populated text
   const cookie_show = useSelector((val) => {
     return val.landing.cookie_show; // controls if the cookie slider should display
   });
