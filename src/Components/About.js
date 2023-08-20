@@ -14,6 +14,7 @@ const About = () => {
       </div>
       <div class="about-us">
         <div class="about-us-flex">
+        <h1 className="mobile-h2">About Us</h1>
           <div class=" about-us-col-1">
             <img class="img-fluid" src={abtImg} alt="" />
           </div>
@@ -39,7 +40,7 @@ const About = () => {
       <div className="why-us">
         <div className="flex-items-2">
           <div className="why-us-col-1">
-            <h2>Why Digital Career Academy</h2>
+            <h2 className="desk-h2">Why Digital Career Academy</h2>
             <p>
               <b>Comprehensive Curriculum</b> <br />
                We offer comprehensive training in
@@ -58,9 +59,10 @@ const About = () => {
               guidance. <br /> 
               <b>Affordable Fees</b>  <br /> 
               Budget friendly fees. We also offer
-              Interest free<br /> payment plans.
+              Interest free payment plans.
             </p>
           </div>
+          <h2 className="mobile-h2">Why Digital Career Academy</h2>
           <img
             className="why-us-col-2"
             src={whyImg}
@@ -86,7 +88,7 @@ const About = () => {
               Data Protection, Product Management and Delivery, Digital Business
               Transformation, and Scrum Coaching”...
               <a
-                href="linkedin.com/in/oludare-olorunfemi"
+                href="https://www.linkedin.com/in/oludare-olorunfemi"
                 target="_blank"
                 rel="noopener noreferrer"
               >

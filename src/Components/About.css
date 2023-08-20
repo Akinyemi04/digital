@@ -36,6 +36,10 @@
     padding: 96px 96px 96px 96px;
 }
 
+.mobile-h2{
+    display: none;
+}
+
 .about-us-flex{
     display: flex;
     text-align: center;
@@ -48,9 +52,7 @@
     margin-right: 20px;
     flex: 1;
     margin-top: 20px;
-    margin-left: -50px;
-   
-}
+   }
 
 .about-us-col-1 img{
     object-fit: cover;
@@ -63,8 +65,7 @@
     flex: 1;
     margin-right: 0px;
     margin-top: 20px;
-    
-}
+    }
 
 .about-us h2{
     font-family: Open Sans;
@@ -111,15 +112,13 @@ text-align: left;
 }
 
 .why-us-col-1{
-    margin-left: 20px;
     width: 40%;
-    margin-left: -50px;
+    margin-left: px;
 } 
 
 .why-us-col-2{
     flex-basis: 1;
     margin-right: 50px;
-    
 }
 
 .why-us img{
@@ -252,7 +251,19 @@ margin-bottom: 30px;
     display: none;
 }
 
+.mobile-h2{
+    display: block;
+    padding-bottom: 8px;
+    font-size: 20px;
+   line-height: 26px;
+}
+
+.about-us .about-us-col-2 h2{
+    display: none;
+}
+
 .about-us-col-2 p{
+    margin-top: 0px;
     line-height: 30px;
     font-size: 20px;
 } 
@@ -275,16 +286,15 @@ margin-bottom: 30px;
 
 .why-us-col-1{
     width: 100%;
-    margin-top: -50px;
 }
 
 .why-us-col-2{
-    margin-bottom: 40px;
+    margin-bottom: px; 
+    margin-right: 0px;
+    
 }
-
-.why-us-col-1 h2{
-   font-size: 20px;
-   line-height: 26px;
+ .why-us .desk-h2{
+   display: none;
 }
 
 .why-us-col-1 p{
@@ -308,6 +318,12 @@ margin-bottom: 30px;
     line-height: normal;
 }
 
+.team .titles p{
+    font-size: 14px;
+    letter-spacing: -1.5px;
+    font-weight: 300;
+}
+
 .team{
    margin-top: -100px;
 }
@@ -324,7 +340,8 @@ margin-bottom: 30px;
 } 
 
  .team .team-member-2{
-    padding-bottom: 100px;
+    margin-top: -50px;
+    margin-bottom: -100px;
 }
 
 
@@ -337,13 +354,16 @@ margin-bottom: 30px;
 }
 
 
+@media (min-width: 400px) and (max-width: 999px){
+
+.team .team-member-2{
+    margin-top:  -100px;
+    margin-bottom: -200px;
+}
+
+}
 
 
-
-
-
-
-      
     
  @media (min-width: 999px) and (max-width: 1365px){
     .about-us{
@@ -378,7 +398,8 @@ margin-bottom: 30px;
 
     .why-us .why-us-col-2{
         margin-left: 0px;
-        margin-right: -100px;
+        margin-right:px;
+        width: 50%;
     }
 
     .why-us-col-1 p{
@@ -415,3 +436,10 @@ margin-bottom: 30px;
     
 
  }  
+
+
+ @media (min-width: 1000px) and (max-width: 1095px){
+    .about-us-col-1{
+        padding-top: 20px;
+    }
+ }
