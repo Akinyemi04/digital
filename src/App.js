@@ -29,7 +29,7 @@ function App() {
         <Route path='/login' element={<Login/>}/>
         <Route path='/taster' element={<FreeTaster/>}/>
         <Route path='/cookie' element={<Cookie/>}/>
-        <Route path='/scrum' element={<Scrum/>}/>
+        <Route path='/scrum_master' element={<Scrum/>}/>
         <Route path='/business_analysis' element={<Business_analysis/>}/>
         <Route path='/data_analytics' element={<Data_analytics/>}/>
       </Routes>

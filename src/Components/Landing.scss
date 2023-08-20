@@ -320,70 +320,70 @@
       }
     }
   }
-  .success_story {
-    background: linear-gradient(
-      180deg,
-      rgba(185, 222, 254, 0.5) 0%,
-      rgba(185, 222, 254, 0) 100%
-    );
-    // padding-left: 14vw;
-    padding: 1vh 3.5vw 4vh 6vw;
-    .swiper{
-      &::before{
-        position: absolute;
-        content: "";
-        width: 6.8vw;
-        // left: -30px;
-        height: 100%;
-        z-index: 2;
-        background: linear-gradient(90deg, rgba(185, 222, 254, 0.31) 0%, rgba(254, 254, 255, 0.00) 98.44%);
-      }
-    }
-    h2 {
-      padding: 24px;
-      text-align: center;
-      font-size: 48px;
-      font-weight: 700;
-      color: #252525;
-      margin-bottom: 50px;
-    }
-    article {
-      background-color: white;
-      border-radius: 30px;
-      position: relative;
-      margin-left: 50px;
-      margin-top: 90px;
-      height: inherit;
-      position: relative;
-      width: 38vw;
-      // min-width:520px
-      padding: 82px 20px 20px;
-      img {
-        position: absolute;
-        top: -90px;
-        border-radius: 50%;
-        width: 150px;
-        height: 150px;
-        left: -20px;
-        object-fit: contain;
-      }
-      p {
-        text-align: center;
-        color: #252525;
-        font-size: 20px;
-        font-weight: 400;
-        letter-spacing: 0.5px;
-      }
-      .name {
-        display: block;
-        width: inherit;
-        text-align: center;
-        // margin-top: 70px;
-        position: absolute;
-        bottom: 30px;
-      }
-    }
-  }
+  // .success_story {
+  //   background: linear-gradient(
+  //     180deg,
+  //     rgba(185, 222, 254, 0.5) 0%,
+  //     rgba(185, 222, 254, 0) 100%
+  //   );
+  //   // padding-left: 14vw;
+  //   padding: 1vh 3.5vw 4vh 6vw;
+  //   .swiper{
+  //     &::before{
+  //       position: absolute;
+  //       content: "";
+  //       width: 6.8vw;
+  //       // left: -30px;
+  //       height: 100%;
+  //       z-index: 2;
+  //       background: linear-gradient(90deg, rgba(185, 222, 254, 0.31) 0%, rgba(254, 254, 255, 0.00) 98.44%);
+  //     }
+  //   }
+  //   h2 {
+  //     padding: 24px;
+  //     text-align: center;
+  //     font-size: 48px;
+  //     font-weight: 700;
+  //     color: #252525;
+  //     margin-bottom: 50px;
+  //   }
+  //   article {
+  //     background-color: white;
+  //     border-radius: 30px;
+  //     position: relative;
+  //     margin-left: 50px;
+  //     margin-top: 90px;
+  //     height: inherit;
+  //     position: relative;
+  //     width: 38vw;
+  //     // min-width:520px
+  //     padding: 82px 20px 20px;
+  //     img {
+  //       position: absolute;
+  //       top: -90px;
+  //       border-radius: 50%;
+  //       width: 150px;
+  //       height: 150px;
+  //       left: -20px;
+  //       object-fit: contain;
+  //     }
+  //     p {
+  //       text-align: center;
+  //       color: #252525;
+  //       font-size: 20px;
+  //       font-weight: 400;
+  //       letter-spacing: 0.5px;
+  //     }
+  //     .name {
+  //       display: block;
+  //       width: inherit;
+  //       text-align: center;
+  //       // margin-top: 70px;
+  //       position: absolute;
+  //       bottom: 30px;
+  //     }
+  //   }
+  // }
   .info {
     display: flex;
     justify-content: space-between;
@@ -630,34 +630,34 @@
         }
       }
     }
-    .success_story {
-      padding: 0;
-      h2 {
-        font-size: 24px;
-        margin-bottom: 30px;
-      }
-      article {
-        padding: 40px 13px;
-        margin-left: 33px;
-        width: 78vw;
-        min-height: 390px;
-        border-radius: 13px;
-        .name {
-          margin-top: 40px;
-        }
-        img {
-          width: 100px;
-          height: 100px;
-          top: -70px;
-        }
-        p {
-          font-size: 16px;
-        }
-      }
-    }
+    // .success_story {
+    //   padding: 0;
+    //   h2 {
+    //     font-size: 24px;
+    //     margin-bottom: 30px;
+    //   }
+    //   article {
+    //     padding: 40px 13px;
+    //     margin-left: 33px;
+    //     width: 78vw;
+    //     min-height: 390px;
+    //     border-radius: 13px;
+    //     .name {
+    //       margin-top: 40px;
+    //     }
+    //     img {
+    //       width: 100px;
+    //       height: 100px;
+    //       top: -70px;
+    //     }
+    //     p {
+    //       font-size: 16px;
+    //     }
+    //   }
+    // }
     .intro {
       img {
-        height: 356px;
+        height: 250px;
       }
       article {
         position: relative;
