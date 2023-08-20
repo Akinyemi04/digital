@@ -7,10 +7,6 @@ import mobile_lady from "./images/mobile.png";
 import img1 from "./images/first_m.png";
 import img2 from "./images/second_m.png";
 import img3 from "./images/unsplash_Jy2mwPtOCOU.png";
-import t1 from "./images/testimonial_1.png";
-import t2 from "./images/testimonial_2.png";
-import t3 from "./images/Rectangle 32.png";
-import t4 from "./images/image 18.png";
 import CloseIcon from "@mui/icons-material/Close";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore from "swiper";
@@ -32,6 +28,7 @@ import { NavLink } from "react-router-dom";
 import scrum from "./images/Scrum card.png";
 import business from "./images/Business Analytics.png";
 import analytic from "./images/Data Analytics.png";
+import Success_stories from "./Success_stories";
 
 SwiperCore.use([Navigation, Pagination, A11y, Autoplay, EffectCoverflow]);
 
@@ -41,9 +38,7 @@ const LandingPage = () => {
     return val.landing.success_story_counter;
   }); // use to monitor number of story display
 
-  const story_height = useSelector((val) => {
-    return val.landing.story_height;
-  }); // since different testimonial have different height ,i'm using the height of the most populated text
+
   const cookie_show = useSelector((val) => {
     return val.landing.cookie_show; // controls if the cookie slider should display
   });
@@ -53,20 +48,13 @@ const LandingPage = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    const element = document.getElementById("first_testimonial");
-    dispatch(landing.update_story_height(element.offsetHeight + 60));
-
-    setTimeout(() => {
-      element.style.height = `${element.offsetHeight + 65}px`;
-    }, 1200);
     if (cookie_show) {
       setTimeout(() => {
         const cookie = document.getElementsByClassName("cookie_start")[0];
-        if(cookie)
-        cookie.setAttribute("id", "cookiee");
+        if (cookie) cookie.setAttribute("id", "cookiee");
       }, 800);
     }
-  }, [cookie_show,dispatch]);
+  }, [cookie_show, dispatch]);
 
   useEffect(() => {
     if (screen < 1680) {
@@ -76,46 +64,41 @@ const LandingPage = () => {
         dispatch(landing.reset_course_height(element.offsetHeight));
       }, 1000);
     }
-  }, [screen,dispatch]);
+  }, [screen, dispatch]);
 
-  useEffect(() => {  
-      window.addEventListener("scroll", ScrollCheck);
-      window.history.scrollRestoration = "manual";
-      if (screen < 501) {
-        dispatch(landing.change_success_counter(1));
-      }
-      return () => {
-        window.removeEventListener("scroll", ScrollCheck);
-      };
-  }, [dispatch,screen,ScrollCheck]);
+  useEffect(() => {
+    window.addEventListener("scroll", ScrollCheck);
+    window.history.scrollRestoration = "manual";
+    return () => {
+      window.removeEventListener("scroll", ScrollCheck);
+    };
+  }, [dispatch, screen, ScrollCheck]);
 
   function ScrollCheck() {
-      let valueDisplays = document.querySelectorAll(".counter");
-      const Elder = document.getElementById("parent");
-      if (Elder.parentElement.classList.contains("visible")) {
-        window.removeEventListener("scroll", ScrollCheck);
-        let interval = 1300;
-        valueDisplays.forEach((value) => {
-          let startValue = 0;
-          let endValue = parseInt(value.getAttribute("data-val"));
-          let duration = Math.floor(interval / endValue);
-          let counter = setInterval(function () {
-            if (endValue === 8000) {
-              startValue += 25;
-              value.textContent = startValue;
-            } else {
-              startValue += 1;
-              value.textContent = startValue;
-            }
-            if (startValue === endValue) {
-              value.nextElementSibling.style.opacity = "1";
-              clearInterval(counter);
-            }
-          }, duration);
-        });
-      }
-    
-  
+    let valueDisplays = document.querySelectorAll(".counter");
+    const Elder = document.getElementById("parent");
+    if (Elder.parentElement.classList.contains("visible")) {
+      window.removeEventListener("scroll", ScrollCheck);
+      let interval = 1300;
+      valueDisplays.forEach((value) => {
+        let startValue = 0;
+        let endValue = parseInt(value.getAttribute("data-val"));
+        let duration = Math.floor(interval / endValue);
+        let counter = setInterval(function () {
+          if (endValue === 8000) {
+            startValue += 25;
+            value.textContent = startValue;
+          } else {
+            startValue += 1;
+            value.textContent = startValue;
+          }
+          if (startValue === endValue) {
+            value.nextElementSibling.style.opacity = "1";
+            clearInterval(counter);
+          }
+        }, duration);
+      });
+    }
   }
 
   function cookie_control() {
@@ -346,7 +329,8 @@ const LandingPage = () => {
           </div>
         </article>
       </section>
-      <section className="success_story">
+      <Success_stories/>
+      {/* <section className="success_story">
         <h2> Success Stories</h2>
         <Swiper
           effect="cover"
@@ -415,73 +399,48 @@ const LandingPage = () => {
               <p className="name">ANONYMOUS</p>
             </article>
           </SwiperSlide>
-          {/* <SwiperSlide>
-            <article style={{ height: story_height }}>
-              <img src={t5} alt="" />
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti iste molestias pariatur tempore labore quisquam
-                voluptas rem aliquam dolorem officiis. Optio eius nostrum, est
-                error molestias tempore deleniti recusandae sint?
-              </p>
-              <p className="name">Name</p>
-            </article>
-          </SwiperSlide>
-          <SwiperSlide>
-            <article style={{ height: story_height }}>
-              <img src={t6} alt="" />
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deleniti iste molestias pariatur tempore labore quisquam
-                voluptas rem aliquam dolorem officiis. Optio eius nostrum, est
-                error molestias tempore deleniti recusandae sint?
-              </p>
-              <p className="name">Name</p>
-            </article>
-          </SwiperSlide> */}
         </Swiper>
-      </section>
+      </section> */}
       <AnimationOnScroll animateIn="visible">
-         
-          <section id="parent" className="info">
-            <div>
-              <p className="number">
-                <span data-val="200" className="counter">
-                  000
-                </span>
-                <span className="plus">+</span>
-              </p>
-              <p className="detail">Success Stories</p>
-            </div>
-            <div>
-              <p className="number">
-                <span data-val="100" className="counter">
-                  000
-                </span>
-                <span className="plus">+</span>
-              </p>
-              <p className="detail">Candidates</p>
-            </div>
-            <div>
-              <p className="number">
-                <span data-val="45" className="counter">
-                  00
-                </span>
-                <span>+</span>
-              </p>
-              <p className="detail">Digital Products </p>
-            </div>
-            <div>
-              <p className="number">
-                <span data-val="10" className="counter">
-                  00
-                </span>
-                <span>+</span>
-              </p>
-              <p className="detail">Career Mentor</p>
-            </div>
-          </section>
-        )  
+        <section id="parent" className="info">
+          <div>
+            <p className="number">
+              <span data-val="200" className="counter">
+                000
+              </span>
+              <span className="plus">+</span>
+            </p>
+            <p className="detail">Success Stories</p>
+          </div>
+          <div>
+            <p className="number">
+              <span data-val="100" className="counter">
+                000
+              </span>
+              <span className="plus">+</span>
+            </p>
+            <p className="detail">Candidates</p>
+          </div>
+          <div>
+            <p className="number">
+              <span data-val="45" className="counter">
+                00
+              </span>
+              <span>+</span>
+            </p>
+            <p className="detail">Digital Products </p>
+          </div>
+          <div>
+            <p className="number">
+              <span data-val="10" className="counter">
+                00
+              </span>
+              <span>+</span>
+            </p>
+            <p className="detail">Career Mentor</p>
+          </div>
+        </section>
+        
       </AnimationOnScroll>
       {cookie_show && (
         <section className="cookie_start">
