@@ -1,20 +1,26 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Epilogue:wght@100&family=Figtree:wght@300;400;500;600;700;800;900&family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,400;0,700;0,900;1,700&family=League+Spartan:wght@500;700;800&family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300&family=Public+Sans:ital,wght@0,300;0,700;1,400&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto&family=Source+Sans+3:wght@300;400;500;600;700;800;900&family=Ubuntu:wght@400;500;700&display=swap");
-.faq-container {
+/* FAQ Hero*/
+/* @media screen and (min-width:'687px'){
+  .faq-hero img{
+  width: 100%;
+  height: 200px; 
+
+  }
+} */
+.faq-hero {
   width: 100%;
   height: auto;
   font-family: "Open Sans", sans-serif;
   position: relative;
 }
-
-.faq-container img {
+.faq-hero img {
   width: 100%;
   height: 500px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-
-.faq-container h1 {
+.faq-hero h1 {
   position: absolute;
   top: 40%;
   text-align: center;
@@ -31,18 +37,27 @@ input {
   z-index: -1;
 }
 
-.row {
+.faqmain {
   padding-top: 10px;
   padding-bottom: 430px;
 }
 
 /* Accordion styles */
 @media screen and (max-width: 1080px) {
-  .row {
+  .faqmain {
     padding-bottom: 250px;
   }
   .tab {
     min-width: 620px !important;
+  }
+}
+@media screen and (max-width: 687px) {
+  .faqmain {
+    padding-bottom: 250px;
+  }
+  .tab {
+    min-width: 361px !important;
+    border-radius: 4px;
   }
 }
 .tab {
