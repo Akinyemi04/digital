@@ -1,8 +1,14 @@
+
+
+
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
+
+
 
 .about-container{
     width: 100%;
@@ -11,53 +17,80 @@
 }
 
 .about-container img{
-width: 100%;    
-height: 500px;
-object-fit: cover;
+ width: 100%;    
+ height: 500px;
+ object-fit: cover;
+ margin-bottom: -10px;
 }
 
 .about-container h1{
     position: absolute;
-    top: 55%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    font-family: "Open Sans";
 }
 
 .about-us{
-    padding: 40px 50px;
-    background-color: rgb(201,230,255);
-    padding-right: 50px !important;
-    padding-left: 50px !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+    background: linear-gradient(to bottom, rgba(185, 222, 254, 1), rgba(185, 222, 254, 0));
+    padding: 96px 96px 96px 96px;
 }
 
+.mobile-h2{
+    display: none;
+}
 
-.about-col-1{
-    margin-right: 40px;
+.about-us-flex{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-us-col-1{
     overflow: hidden;
-}
+    margin-right: 20px;
+    flex: 1;
+    margin-top: 20px;
+   }
 
-.about-col-1 img{
-    /* width: 100%;
+.about-us-col-1 img{
+    object-fit: cover;
+    width: 100%;
     height: auto;
     display: block;
-    border-radius: 15px;
-    transition: 0.5s ease;
-    height: 400px; */
-    
 }
 
-.about-col-2 {
-    
-}
-
-.about-col-2 p{
+.about-us-col-2{
+    flex: 1;
+    margin-right: 0px;
     margin-top: 20px;
-    line-height: 1.5;
-    font-size: 18px;
+    }
+
+.about-us h2{
+    font-family: Open Sans;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 66px;
+    letter-spacing: -1.5px;
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
 }
+
+.about-us p{
+font-family: Open Sans;
+font-size: 20px;
+font-weight: 400;
+line-height: 44px;
+letter-spacing: -1.5px;
+text-align: left;
+
+}
+
+
 
 .sub-title{
     font-size: 60px;
@@ -66,27 +99,70 @@ object-fit: cover;
 }
 
 .why-us{
-    background-color: white;
-    margin: 20px;
+    background: linear-gradient(to bottom, rgba(185, 222, 254, 1), rgba(185, 222, 254, 0));
+    padding: 0px 0px 96px 96px;
+}
+
+.flex-items-2{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    row-gap: 24px;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .why-us-col-1{
-    padding-top: 0 !important;
+    width: 40%;
+    margin-left: px;
 } 
+
+.why-us-col-2{
+    flex-basis: 1;
+    margin-right: 50px;
+}
 
 .why-us img{
     padding-top: 0;
+    object-fit: contain;
+    max-width: 100%;
+    height: auto;
 }
+
+
+
+.why-us-col-1 p{
+font-family: Open Sans;
+font-size: 24px;
+font-weight: 600;
+line-height: 44px;
+letter-spacing: -1.5px;
+
+}
+
+.why-us-col-1 h2{
+font-family: Open Sans;
+font-size: 36px;
+font-weight: 700;
+line-height: 66px;
+letter-spacing: -1.5px;
+margin-bottom: 30px;
+
+}
+
 
 
 .team-wrapper{
-   margin-top: 20px; 
-   background-color: rgb(201,230,255);
+    width: 100%;
+    height: 100%;
+   padding: 0px 0px 96px 0px; 
+   background: linear-gradient(to bottom, rgba(185, 222, 254, 1), rgba(185, 222, 254, 0));
+   
 }
 
-.team-wrapper h1{
+.team-wrapper h2{
     font-size: 52px;
-    margin-bottom: 60px;
+    margin-bottom: 200px;
     text-align: center;
 }
 
@@ -96,60 +172,275 @@ object-fit: cover;
     width: auto;
     justify-content: center;
     flex-wrap: wrap;
+    padding-right: 0px;
+    margin-top: 0px;
 }
 
-.team .team-member{
+.team .team-member-1, .team-member-2{
     background: #fff;
-    margin: 5px;
-    margin-bottom: 50px;
-    width: 47 0px;
-    padding: 20px;
+    margin: 16px;
+    max-width: 610px;
+    min-height: 610px;
     line-height: 20px;
     position: relative;
+    border-radius: 16px;
+    padding: 150px 20px 20px 20px;
 
 }
 
-.team .team-member{
-    font-size: 26px;
-    margin-top: 50px;
-}
-
-.team .team-member .team-img{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+.team  .team-img{
+    width: 250px;
     position: absolute;
-    top: -7.5%;
+    top: -18%;
     left: 50%;
     transform: translateX(-50%);
-    background: #201f1f;
 }
 
-.team .team-member .team-img img{
-    width: 100px;
-    height: 100px;
-    padding: 10px;
+.team .team-img img{
+    width: 250px;
+    height: 250px;
 
 }
  
-.team .team-member p{
-    margin-top: 20px;
+.team p{
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: -1.5px;
+    text-align: center;
 }
 
-@media screen and (max-width: 768px){
-    .row{
-        padding: 20px;
-        flex-direction: column;
-    }
-
-    .about-col-1{
-        margin-right: 0px;
-        margin-bottom: 20px ;
-    }
-
-    .about-col-2 p{
-        padding: 0px;
-        font-size: 16px;
-
-    }
+.titles h3{
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32.66px;
 }
+
+.titles p{
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: -2px;
+}
+
+
+
+
+
+
+@media (max-width: 999px){ 
+   .about-us{
+    padding: 0;;
+   }
+
+
+    .about-us-flex{
+    flex-direction: column;
+    padding: 10px;
+    
+}
+
+
+.about-us-col-1{
+    margin: 0;
+}
+
+.about-us-col-2 br{
+    display: none;
+}
+
+.mobile-h2{
+    display: block;
+    padding-bottom: 8px;
+    font-size: 20px;
+   line-height: 26px;
+}
+
+.about-us .about-us-col-2 h2{
+    display: none;
+}
+
+.about-us-col-2 p{
+    margin-top: 0px;
+    line-height: 30px;
+    font-size: 20px;
+} 
+
+.why-us{
+    padding: 0;
+}
+
+.flex-items-2{
+    flex-direction: column;
+}
+
+.why-us-col-1:nth-child(1){
+      order: 2;
+}
+
+.flex-items-2{
+    margin: 30px;
+}
+
+.why-us-col-1{
+    width: 100%;
+}
+
+.why-us-col-2{
+    margin-bottom: px; 
+    margin-right: 0px;
+    
+}
+ .why-us .desk-h2{
+   display: none;
+}
+
+.why-us-col-1 p{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 200;
+}
+
+.why-us-col-2:nth-child(2){
+    order: 1;
+}
+
+.team-wrapper h2{
+    font-size: 24px;
+    padding-top: 30px;
+}
+
+.team p{
+    font-size: 18px;
+    font-style: italic;
+    line-height: normal;
+}
+
+.team .titles p{
+    font-size: 14px;
+    letter-spacing: -1.5px;
+    font-weight: 300;
+}
+
+.team{
+   margin-top: -100px;
+}
+
+.team .team-img{
+   top: -60px;
+}
+
+
+.team-wrapper .team-member-1, .team-member-2{
+   background: none;
+   margin-bottom: 50px;
+   
+} 
+
+ .team .team-member-2{
+    margin-top: -50px;
+    margin-bottom: -100px;
+}
+
+
+.team .team-member .team-img img{
+    width: 150px;
+    height: 150px;
+} 
+
+
+}
+
+
+@media (min-width: 400px) and (max-width: 999px){
+
+.team .team-member-2{
+    margin-top:  -100px;
+    margin-bottom: -200px;
+}
+
+}
+
+
+    
+ @media (min-width: 999px) and (max-width: 1365px){
+    .about-us{
+        padding: 30;
+    }
+
+    
+    .about-us-col-1 {
+        margin-top: 40px;
+}
+    
+    .about-us-col-1 img{
+        width: 100%;
+    }
+    
+    .about-us-col-2{
+        margin-left: 20px;
+        padding-right: -200px;
+    }
+
+    .about-us-col-2 p{
+        line-height: 30px;
+        font-size: 18px;
+    }
+
+
+
+    .why-us .why-us-col-1{
+        margin: 0;
+        margin-left: -50px;
+    }
+
+    .why-us .why-us-col-2{
+        margin-left: 0px;
+        margin-right:px;
+        width: 50%;
+    }
+
+    .why-us-col-1 p{
+        font-size: 20px;
+    }
+
+    .why-us-col-1 h2{
+        font-size: 26px;
+        line-height: 50px;
+    }
+
+    .team .team-member-1, .team-member-2{
+    background: #fff;
+    margin: 16px;
+    max-width: 410px;
+    min-height: 510px;
+    line-height: 15px;
+    border-radius: 16px;
+    padding: 75px 10px 10px 10px;
+    }
+
+    .team p{
+        font-family: "Open Sans";
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 26px;
+        letter-spacing: -1.5px;
+        text-align: center;
+    }
+
+    .team .team-img{
+        top: -150px;
+    }
+    
+
+ }  
+
+
+ @media (min-width: 1000px) and (max-width: 1095px){
+    .about-us-col-1{
+        padding-top: 20px;
+    }
+ }

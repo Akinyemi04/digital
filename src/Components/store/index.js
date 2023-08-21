@@ -58,5 +58,5 @@ const store = configureStore({
         landing:landingDetails.reducer
     }
 })
-
+ 
 export default store
