@@ -11,7 +11,7 @@ import Login from './Components/Login';
 import FreeTaster from './Components/freeTaster';
 import Connect from './Components/Connect';
 import Cookie from './Components/Cookie';
-import Scrum from './Components/Scrum';
+import Courses from './Components/Courses';
 import Business_analysis from './Components/Business_analysis';
 import Data_analytics from './Components/Data_analytics';
 
@@ -29,7 +29,7 @@ function App() {
         <Route path='/login' element={<Login/>}/>
         <Route path='/taster' element={<FreeTaster/>}/>
         <Route path='/cookie' element={<Cookie/>}/>
-        <Route path='/scrum_master' element={<Scrum/>}/>
+        <Route path='/courses' element={<Courses/>}/>
         <Route path='/business_analysis' element={<Business_analysis/>}/>
         <Route path='/data_analytics' element={<Data_analytics/>}/>
       </Routes>
