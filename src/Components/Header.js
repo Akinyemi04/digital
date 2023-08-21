@@ -156,7 +156,7 @@ const Header = () => {
           <aside>
             <NavLink
               onClick={screenSize > 1000 ? dropdown : navigate}
-              to="/scrum_master"
+              to="/courses"
             >
               Practical Scrum Master
             </NavLink>
