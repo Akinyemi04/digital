@@ -51,32 +51,32 @@ return (
                 </div>
             </div>
             <div className="tab">
-            <input type="checkbox" id="chck5"/>
-            <label className="tab-label" htmlFor="chck5">What types of tech careers are covered in the courses?</label>
-            <div className="tab-content">
-            Our courses cover a wide range of tech careers, including data analysis, scrum master, business analysis, and product management. We strive to offer diverse options to match individual interests and aspirations.
-            </div>
-            </div>
-            <div className="tab">
-            <input type="checkbox" id="chck6"/>
-            <label className="tab-label" htmlFor="chck6">How long do I have access to the course materials</label>
-            <div className="tab-content">
-            You will have unlimited access to the course materials during the duration of your course and for as long as you are active on our platform, the course is available. This way, you can review the content and refresh your knowledge even after completing the course
-            </div>
+                <input type="checkbox" id="chck5"/>
+                <label className="tab-label" htmlFor="chck5">What types of tech careers are covered in the courses?</label>
+                <div className="tab-content">
+                Our courses cover a wide range of tech careers, including data analysis, scrum master, business analysis, and product management. We strive to offer diverse options to match individual interests and aspirations.
+                </div>
             </div>
             <div className="tab">
-            <input type="checkbox" id="chck7"/>
-            <label className="tab-label" htmlFor="chck7">Are there any opportunities For hands-on experience or real-world projects?</label>
-            <div className="tab-content">
-            Yes, we emphasise real hands-on experience for our candidates, we believe in providing practical learning experiences. Many of our courses include hands-on projects and real-world simulations to reinforce your learning and help you build a portfolio to showcase your skills to potential employers.
-            </div>
+                <input type="checkbox" id="chck6"/>
+                <label className="tab-label" htmlFor="chck6">How long do I have access to the course materials</label>
+                <div className="tab-content">
+                You will have unlimited access to the course materials during the duration of your course and for as long as you are active on our platform, the course is available. This way, you can review the content and refresh your knowledge even after completing the course
+                </div>
             </div>
             <div className="tab">
-            <input type="checkbox" id="chck8"/>
-            <label className="tab-label" htmlFor="chck8">Do you offer support?</label>
-            <div className="tab-content">
-            Yes, we are committed to helping our candidates succeed in their tech careers. We offer career support services, including resume building and interview preparation, to increase your chances of landing your dream tech job.
+                <input type="checkbox" id="chck7"/>
+                <label className="tab-label" htmlFor="chck7">Are there any opportunities For hands-on experience or real-world projects?</label>
+                <div className="tab-content">
+                Yes, we emphasise real hands-on experience for our candidates, we believe in providing practical learning experiences. Many of our courses include hands-on projects and real-world simulations to reinforce your learning and help you build a portfolio to showcase your skills to potential employers.
+                </div>
             </div>
+            <div className="tab">
+                <input type="checkbox" id="chck8"/>
+                <label className="tab-label" htmlFor="chck8">Do you offer support?</label>
+                <div className="tab-content">
+                Yes, we are committed to helping our candidates succeed in their tech careers. We offer career support services, including resume building and interview preparation, to increase your chances of landing your dream tech job.
+                </div>
             </div>
             <div className="tab">
             <input type="checkbox" id="chck9"/>
