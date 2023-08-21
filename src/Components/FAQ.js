@@ -75,12 +75,12 @@ return (
                 <input type="checkbox" id="chck8"/>
                 <label className="tab-label" htmlFor="chck8">Do you offer support?</label>
                 <div className="tab-content">
-                Yes, we are committed to helping our candidates succeed in their tech careers. We offer career support services, including resume building and interview preparation, to increase your chances of landing your dream tech job.
+                Yes, we are committed to helping our candidates succeed in their tech careers.We offer career support services, including resume building and interview preparation, to increase your chances of landing your dream tech job.
                 </div>
             </div>
             <div className="tab">
             <input type="checkbox" id="chck9"/>
-            <label className="tab-label" htmlFor="chck9">Can I study at my own pace, or are there specific deadlines?</label>
+            <label className="tab-label" htmlFor="chck9">Can I study at my own pace,or are there specific deadlines?</label>
             <div className="tab-content">
             We understand that everyone's learning pace is different. Our courses and trainings are intensive for initial 6 weeks. However , you are allowed to self-paced at your convenience and complete modules as per your schedule.
             </div>
