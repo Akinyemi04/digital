@@ -22,7 +22,7 @@ const Courses = () => {
         <img src={introImg} alt="" />
       </div>
 
-     /* Courses */
+    { /* Courses */}
 
     <div className="All-courses">
         <h2>All Courses</h2>
