@@ -5,20 +5,20 @@ import { landing } from "./store";
 import Success_stories from "./Success_stories";
 
 const Data_Analytics = () => {
-  const dispatch = useDispatch();
-  useEffect(() => {
-    window.history.scrollRestoration = "manual";
-    window.removeEventListener("scroll", ScrollCheck);
-    dispatch(landing.header(true));
-  }, [dispatch]);
-  function ScrollCheck() {}
+    const dispatch = useDispatch();
+    useEffect(() => {
+      window.history.scrollRestoration = "manual";
+      window.removeEventListener("scroll", ScrollCheck);
+      dispatch(landing.header(true));
+    }, [dispatch]);
+    function ScrollCheck() {}
+  
+    return (
+      <div>
+        <ScrollToTop />
+        <Success_stories/>
+      </div>
+    );
+};
 
-  return (
-    <div>
-      <ScrollToTop/>
-      <Success_stories/>
-    </div>
-  )
-}
-
-export default Data_Analytics;
+export default Data_Analytics
