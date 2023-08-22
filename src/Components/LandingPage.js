@@ -69,6 +69,7 @@ const LandingPage = () => {
   useEffect(() => {
     window.addEventListener("scroll", ScrollCheck);
     window.history.scrollRestoration = "manual";
+    dispatch(landing.header(true));
     return () => {
       window.removeEventListener("scroll", ScrollCheck);
     };

@@ -4,11 +4,13 @@ import bg from "./images/faqbg.png";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import ScrollToTop from "./ScrollToTop";
+import { landing } from "./store";
 
 const FAQ = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     window.history.scrollRestoration = "manual";
+    dispatch(landing.header(true));
     window.removeEventListener("scroll", ScrollCheck);
   }, [dispatch]);
 

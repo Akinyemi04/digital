@@ -8,6 +8,7 @@ import { useEffect } from "react";
 const Header = () => {
   const screenSize = window.screen.availWidth;
 
+
   // eslint-disable-next-line react-hooks/exhaustive-deps
 
 
@@ -156,7 +157,7 @@ const Header = () => {
           <aside>
             <NavLink
               onClick={screenSize > 1000 ? dropdown : navigate}
-              to="/courses"
+              to="/scrum_master"
             >
               Practical Scrum Master
             </NavLink>
@@ -192,13 +193,7 @@ const Header = () => {
         >
           FAQs
         </NavLink>
-        <a
-          href="https://digitalbusinesskonsult.com/tap-registration/"
-          className="taster"
-        >
-          Free Taster Session
-        </a>
-        {/* <NavLink onClick= {navigate} to= '/taster' className="taster "> Free Taster Session</NavLink> */}
+        <NavLink onClick= {navigate} to= '/Free_taster' className="taster "> Free Taster Session</NavLink>
 
         <NavLink
           onClick={screenSize > 1000 ? assistant_dropdown : navigate}
