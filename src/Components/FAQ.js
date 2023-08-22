@@ -17,7 +17,7 @@ const FAQ = () => {
     <div className="">
       <ScrollToTop />
       <div className="faq-hero">
-        <img alt="FAQ" src={bg} />
+        <img alt="FAQ" src={bg} /> 
         <h1>Frequently Asked Questions</h1>
       </div>
       <div className="faqmain">
@@ -25,7 +25,7 @@ const FAQ = () => {
           <div className="tab">
             <input type="checkbox" id="chck1" />
             <label className="tab-label" htmlFor="chck1">
-              What is Digital Careers Academy and what does it offer
+              What is Digital Careers Academy and what does it offer?
             </label>
             <div className="tab-content">
               Digital Careers Academy is an e-learning platform specifically
@@ -92,7 +92,7 @@ const FAQ = () => {
               duration of your course and for as long as you are active on our
               platform, the course is available. This way, you can review the
               content and refresh your knowledge even after completing the
-              course
+              course.
             </div>
           </div>
           <div className="tab">
