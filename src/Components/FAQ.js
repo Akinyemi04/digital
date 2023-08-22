@@ -17,7 +17,7 @@ function ScrollCheck(){
 return (
 <div className=""> 
     <div className='faq-hero' >
-        <img alt='FAQ' src={bg} />
+        <img alt='' src={bg} />
         <h1>Frequently Asked Questions</h1>
     </div>
     <div className="faqmain">
