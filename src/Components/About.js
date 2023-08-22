@@ -8,11 +8,13 @@ import team2Img from "./images/img7.png";
 import ScrollToTop from "./ScrollToTop";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
+import { landing } from "./store";
 
 const About = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     window.history.scrollRestoration = "manual";
+    dispatch(landing.header(true));
     window.removeEventListener("scroll", ScrollCheck);
   }, [dispatch]);
 

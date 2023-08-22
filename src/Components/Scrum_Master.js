@@ -4,7 +4,7 @@ import ScrollToTop from "./ScrollToTop";
 import { landing } from "./store";
 import Success_stories from "./Success_stories";
 
-const Data_Analytics = () => {
+const Scrum_Master = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     window.history.scrollRestoration = "manual";
@@ -15,10 +15,10 @@ const Data_Analytics = () => {
 
   return (
     <div>
-      <ScrollToTop/>
+      <ScrollToTop />
       <Success_stories/>
     </div>
-  )
-}
+  );
+};
 
-export default Data_Analytics;
+export default Scrum_Master;
