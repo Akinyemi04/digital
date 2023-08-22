@@ -5,33 +5,45 @@ import abtImg from "./images/Img2.png";
 import whyImg from "./images/img3.png";
 import team1Img from "./images/img6.png";
 import team2Img from "./images/img7.png";
+import ScrollToTop from "./ScrollToTop";
+import { useDispatch } from "react-redux";
+import { useEffect } from "react";
+
 const About = () => {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    window.history.scrollRestoration = "manual";
+    window.removeEventListener("scroll", ScrollCheck);
+  }, [dispatch]);
+
+  function ScrollCheck() {}
   return (
     <div>
+      <ScrollToTop />
       <div className="about-container">
         <img alt="HeroImg" src={bg} />
         <h1>About Us</h1>
       </div>
       <div class="about-us">
         <div class="about-us-flex">
-        <h1 className="mobile-h2">About Us</h1>
+          <h1 className="mobile-h2">About Us</h1>
           <div class=" about-us-col-1">
             <img class="img-fluid" src={abtImg} alt="" />
           </div>
-          <div
-            class=" about-us-col-2"
-          >
+          <div class=" about-us-col-2">
             <h2>About Us</h2>
             <p>
-              Digital Careers Academy coaches and mentor candidates<br /> through the
-              entire development cycle of products from design <br /> to launch in an
-              agile environment. We have a plethora of<br /> vetted digital career
-              mentors to guide you in securinghigh <br /> -paying digital roles. <br /> Our
-              training facilitators are competent in Product <br /> Management,
-              Business Analysis, Scrum Master, Product<br /> Ownership, Data
-              Analytics, and Data Protection. Our interns gain <br /> work experience
-              by using collaborative and product development tools in a
-              simulated environment.
+              Digital Careers Academy coaches and mentor candidates
+              <br /> through the entire development cycle of products from
+              design <br /> to launch in an agile environment. We have a
+              plethora of
+              <br /> vetted digital career mentors to guide you in securinghigh{" "}
+              <br /> -paying digital roles. <br /> Our training facilitators are
+              competent in Product <br /> Management, Business Analysis, Scrum
+              Master, Product
+              <br /> Ownership, Data Analytics, and Data Protection. Our interns
+              gain <br /> work experience by using collaborative and product
+              development tools in a simulated environment.
             </p>
           </div>
         </div>
@@ -43,31 +55,25 @@ const About = () => {
             <h2 className="desk-h2">Why Digital Career Academy</h2>
             <p>
               <b>Comprehensive Curriculum</b> <br />
-               We offer comprehensive training in
-              Business Analysis, Scrum Master, & Data Analytics. <br />
+              We offer comprehensive training in Business Analysis, Scrum
+              Master, & Data Analytics. <br />
               <b>Practical Hands-on Experience</b>. <br />
-               Our interns gain work experience by using
-              collaborative and product development tools in an interactive simulated environment. <br />
-
+              Our interns gain work experience by using collaborative and
+              product development tools in an interactive simulated environment.{" "}
+              <br />
               <b>Flexibility and Accessibility</b> <br />
-              Learning
-              management system that allows candidates access all training
-              sessions at all times. Coaches are readily available to support.
-              Industry Expert Instructors  <br />
-               <b>Our coaches are certified industry</b> <br />
+              Learning management system that allows candidates access all
+              training sessions at all times. Coaches are readily available to
+              support. Industry Expert Instructors <br />
+              <b>Our coaches are certified industry</b> <br />
               experts with years of experience who provide valuable insights and
-              guidance. <br /> 
-              <b>Affordable Fees</b>  <br /> 
-              Budget friendly fees. We also offer
-              Interest free payment plans.
+              guidance. <br />
+              <b>Affordable Fees</b> <br />
+              Budget friendly fees. We also offer Interest free payment plans.
             </p>
           </div>
           <h2 className="mobile-h2">Why Digital Career Academy</h2>
-          <img
-            className="why-us-col-2"
-            src={whyImg}
-            alt=""
-          />
+          <img className="why-us-col-2" src={whyImg} alt="" />
         </div>
       </div>
 
