@@ -1,15 +1,5 @@
-
-
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Epilogue:wght@100&family=Figtree:wght@300;400;500;600;700;800;900&family=Jost:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,400;0,700;0,900;1,700&family=League+Spartan:wght@500;700;800&family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,300&family=Public+Sans:ital,wght@0,300;0,700;1,400&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto&family=Source+Sans+3:wght@300;400;500;600;700;800;900&family=Ubuntu:wght@400;500;700&display=swap");
 
-/* FAQ Hero*/
- /* @media screen and (min-width:'687px'){
-  .faq-hero img{
-  width: 100%;
-  height: 200px; 
-  
-  }
-} */ 
 .faq-hero{
   width: 100%;
   height: auto;
@@ -35,44 +25,95 @@
   color: white;
   }
 }
-
 /*For Selection of accordion*/
-input {
-      position: absolute;
-      opacity: 0;
-      z-index: -1;
+.faqinput {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
 }
-
 // Layout
 .faqmain {
+
   padding-top: 10px; 
   padding-bottom: 430px; 
 }
-
 /* Accordion styles */
-@media screen and (max-width:'1080px'){
-  .faqmain{
-    padding-bottom: 250px;
-  }
-  .tab{
-    min-width: 620px !important;
-  }
-}
-
 @media screen and (max-width:'687px'){
+  .faq-hero{
+    img{
+      width: 100%; 
+      height: 261px;
+      object-fit: cover;
+      transform: rotate(180deg);
+      }
+    h1{
+      position: absolute;
+    //  top: 20%;
+      color: #FEFEFF;
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      line-height: 32.68px;
+    }
+  }
   .faqmain{
     padding-bottom: 250px;
   }
    .tab{
     min-width: 361px !important;
     border-radius: 4px;
+    &-label{
+        font-size: 16px;
+        font-weight: 600; 
+        line-height: 21.79px;
+        letter-spacing: 0.5px;
+      } 
     
   } 
-  
-  
-  
   }
-
+  @media screen and (max-width: "500px"){
+    .faq-hero{
+      img{
+        width: 100%; 
+        height: 261px;
+        object-fit: cover;
+        transform: rotate(180deg);
+        }
+      h1{
+        position: absolute;
+        //top: 20%;  
+        color: #FEFEFF;
+        font-size: 24px;
+        letter-spacing: 0.5px;
+        line-height: 32.68px;
+      }
+    }
+    .faqmain{
+      padding-bottom: 250px;
+    } 
+     .tab{
+      border-radius: 4px;
+      font-size: 16px;
+      width: 461px;
+      &-label{
+        font-size: 16px;
+        font-weight: 600; 
+        line-height: 21.79px;
+        letter-spacing: 0.5px;
+      }  
+      
+  &-content {
+    max-height: 0;
+    padding: 0 1em;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: rgb(27, 22, 22); 
+    background: #ffff;
+    transition: all .35s;
+    }  
+    } 
+  }
 .tab {
   font-size:18px ;
   font-weight: 600;
@@ -100,6 +141,7 @@ input {
   transition: all .35s;
   }
   }
+  // content hide
   &-content {
   max-height: 0;
   padding: 0 1em;
@@ -107,18 +149,9 @@ input {
   background: #ffff;
   transition: all .35s;
   }
-  &-close {
-  display: flex;
-  justify-content: flex-end;
-  padding: 1em;
-  font-size: 0.75em;
-  background: #ffff; 
-  cursor: pointer;
   }
-  }
-
-// :checked
-input:checked {
+// :checked i.e toggle the arrowdrop down
+ input:checked {
   + .tab-label {
   &::after {
   transform: rotate(-90deg);
@@ -129,3 +162,6 @@ input:checked {
   padding: 1em;
   }
 }
+
+
+
