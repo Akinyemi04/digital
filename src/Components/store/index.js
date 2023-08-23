@@ -8,9 +8,17 @@ const landingDetails = createSlice({
         cookie_show : true,
         courses_max_height:'auto',
         courses_height:'auto',
-        counter_component:true
+        counter_component:true,
+        should_display_header:true
     },
     reducers:{
+        header(state,action){
+            return{
+                ...state,
+                should_display_header:action.payload
+            }
+        }
+        ,
         change_success_counter(state,action){
             return{
                 ...state,
@@ -51,11 +59,50 @@ const landingDetails = createSlice({
     }
 })
 
+const Free_Taster= createSlice({
+    name:'freeTaster',
+    initialState:{
+        name:'',
+        email:'',
+        course:'',
+        Terms_check:false
+    },
+    reducers:{
+        change_name(state,action){
+            return {
+                ...state,
+                name:action.payload
+            }
+        },
+        update_email(state,action){
+            return {
+                ...state,
+                email:action.payload
+            }
+        },
+        change_course(state,action){
+            return{
+                ...state,
+                course:action.payload
+            }
+        },
+        terms_and_condition(state,action){
+            return{
+                ...state,
+                Terms_check:action.payload
+            }
+        }
+    }
+})
+
 export const  landing = landingDetails.actions
+export const Free_Taste = Free_Taster.actions
 
 const store = configureStore({
     reducer:{
-        landing:landingDetails.reducer
+        landing:landingDetails.reducer,
+        free_taster:Free_Taster.reducer
+
     }
 })
  
