@@ -3,7 +3,8 @@ import { useDispatch, useSelector } from "react-redux";
 import ScrollToTop from "./ScrollToTop";
 import { landing } from "./store";
 import bg1 from "./images/bg1.png";
-import { Navigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import './free_taster.css'
 
 const Free_Taster = () => {
   const dispatch = useDispatch();
@@ -24,22 +25,29 @@ const Free_Taster = () => {
     
   })
   
-  useEffect(() => {
+  useEffect(() => {dispatch(landing.connection(false))
+
     window.history.scrollRestoration = "manual";
     window.removeEventListener("scroll", ScrollCheck);
+    window.removeEventListener("scroll", assistant_dropdown);
     dispatch(landing.header(false));
   }, [dispatch]);
 
   function ScrollCheck() {}
+  function assistant_dropdown(){
+    console.log('child')
+  }
   return (
-    <div>
+    <div className="free_taster">
       <ScrollToTop />
       <img src={bg1} alt="" />
-      <Navigate to="/">Back</Navigate>
+      <NavLink to="/">Back</NavLink>
       <main>
         <h1>Register for Free Taster</h1>
-        <label htmlFor=""></label>
-        <input type="text" />n
+        <label htmlFor="name"> FULL NAME</label>
+        <input type="text" placeholder="Enter Your Full Name" id="name"/>
+        <label htmlFor="email">EMAIL</label>
+        <input type="text" placeholder="Enter Address" id="email" />
       </main>
     </div>
   );

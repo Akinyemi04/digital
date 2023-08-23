@@ -14,6 +14,9 @@ const Header = () => {
 
   useEffect(()=>{
     window.addEventListener('scroll' , assistant_dropdown);
+    return () => {
+      window.removeEventListener("scroll", assistant_dropdown);
+    };
   },[])
   function toggle_nav(e) {
     const nav = document.getElementById("nav");
@@ -193,7 +196,7 @@ const Header = () => {
         >
           FAQs
         </NavLink>
-        <NavLink onClick= {navigate} to= '/Free_taster' className="taster "> Free Taster Session</NavLink>
+        <NavLink onClick= {navigate} to='/Free_taster' className="taster "> Free Taster Session</NavLink>
 
         <NavLink
           onClick={screenSize > 1000 ? assistant_dropdown : navigate}
