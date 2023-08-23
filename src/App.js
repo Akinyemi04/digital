@@ -12,8 +12,8 @@ import Free_Taster from './Components/Free_Taster.js';
 import Connect from './Components/Connect';
 import Cookie from './Components/Cookie';
 import Courses from './Components/Courses';
-import Business_analysis from './Components/Business_Analysis';
-import Data_analytics from './Components/Data_Analytics';
+import Business_Analytic from './Components/Business_Analytic';
+import Data_Analysis from './Components/Data_Analysis';
 import { useSelector } from 'react-redux';
 import Scrum_Master from './Components/Scrum_Master';
 
@@ -35,8 +35,8 @@ function App() {
         <Route path='/Free_taster' element={<Free_Taster/>}/>
         <Route path='/cookie' element={<Cookie/>}/>
         <Route path='/courses' element={<Courses/>}/>
-        <Route path='/business_analysis' element={<Business_analysis/>}/>
-        <Route path='/data_analytics' element={<Data_analytics/>}/>
+        <Route path='/business_analysis' element={<Business_Analytic/>}/>
+        <Route path='/data_analytics' element={<Data_Analysis/>}/>
         <Route path='/scrum_master' element={<Scrum_Master/>}/>
       </Routes>
       <Footer/>

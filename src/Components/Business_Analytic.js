@@ -4,7 +4,7 @@ import ScrollToTop from "./ScrollToTop";
 import { landing } from "./store";
 import Success_stories from "./Success_stories";
 
-const Business_Analysis = () => {
+const Business_Analytic = () => {
     const dispatch = useDispatch();
     useEffect(() => {
       window.history.scrollRestoration = "manual";
@@ -19,7 +19,6 @@ const Business_Analysis = () => {
         <Success_stories/>
       </div>
     );
-  
 }
 
-export default Business_Analysis
+export default Business_Analytic
