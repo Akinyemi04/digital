@@ -58,6 +58,7 @@ const LandingPage = () => {
 
   useEffect(() => {
     dispatch(landing.connection(true))
+    dispatch(landing.display_footer(true))
     if (screen < 1680) {
       const element = document.getElementById("business_analysis");
 

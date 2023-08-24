@@ -27,6 +27,7 @@ const Free_Taster = () => {
 
   useEffect(() => {
     dispatch(landing.connection(false));
+    dispatch(landing.display_footer(true))
     window.history.scrollRestoration = "manual";
     dispatch(landing.header(false));
   }, [dispatch]);
@@ -74,6 +75,7 @@ const Free_Taster = () => {
   function submit() {
       if(name.length !== 0 && email.length !== 0 && course !== 'Courses' && term_condition !== false){
         console.log('pass')
+        nav('/success_F')
 
       }
       else{

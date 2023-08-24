@@ -1,3 +1,59 @@
+.free_taste_popup {
+  position: relative;
+  height: 100vh;
+  padding-top: 19vh;
+}
+.free_taste_popup img {
+  position: absolute;
+  width: 100vw;
+}
+.free_taste_popup .up {
+  top: 0;
+}
+.free_taste_popup .down {
+  bottom: 0;
+}
+.free_taste_popup main {
+  margin: auto;
+  width: 86vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.free_taste_popup main img {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 50px;
+}
+.free_taste_popup main h5 {
+  color: #199ef3;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.25px;
+}
+.free_taste_popup main p {
+  font-size: 16px;
+}
+.free_taste_popup main a {
+  transform: translateY(90px);
+  border-radius: 8px;
+  border: 3px solid var(--accent-color, #0082f0);
+  text-align: center;
+  width: 341px;
+  color: #6fb6f6;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 16px 20px;
+  text-decoration: none;
+  letter-spacing: 0.15px;
+  transition: opacity 0.4s;
+}
+.free_taste_popup main a:hover {
+  opacity: 0.67;
+}
+
 .free_taster {
   position: relative;
   padding: 240px 6.5vw 96px;
@@ -147,6 +203,26 @@
 }
 
 @media screen and (max-width: 500px) {
+  .free_taste_popup .up, .free_taste_popup .down {
+    display: none;
+  }
+  .free_taste_popup main {
+    width: 100vw;
+  }
+  .free_taste_popup main h5 {
+    font-size: 20px;
+  }
+  .free_taste_popup main p {
+    font-size: 15px;
+  }
+  .free_taste_popup main a {
+    transform: translateY(160px);
+    font-size: 16px;
+    width: 170px;
+    border-radius: 4px;
+    border: 1px solid #0082f0;
+    padding: 10px;
+  }
   .free_taster {
     padding: 108px 16px 30px;
   }
