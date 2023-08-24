@@ -9,6 +9,9 @@ const Connect = () => {
     const screen = window.screen.availWidth
     useEffect(()=>{
         window.addEventListener('scroll',toggleinquiry)
+        return () => {
+          window.removeEventListener("scroll", toggleinquiry);
+        };
     })
 
     function toggleinquiry(){

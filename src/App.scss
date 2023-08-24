@@ -71,10 +71,13 @@ header {
   z-index: 3;
   display: flex;
   justify-content: space-between;
-  padding: 9px 63px 10px 23px;
+  padding: 0px 63px 0px 23px;
   align-items: center;
   opacity: 0;
   animation: view 0.4s linear forwards;
+  #logo{
+    width:135px;
+  }
   .hamburger {
     display: none;
     z-index: 4;
@@ -202,10 +205,9 @@ header {
     .courses {
       color: white;
       position: relative;
-      &:hover {
-        opacity: 1;
-      }
-      p {
+      top: 14px;
+      height: 55px;
+      #course-controller {
         display: flex;
         margin-top: 3px;
         transition: opacity 0.4s;
@@ -237,17 +239,34 @@ header {
           color: #6262a9;
           font-size: 20px;
           opacity: 0;
-          font-weight: 700;
+          color: #252525;
           letter-spacing: 0.15px;
           transition: all 0.4s linear;
           border-radius: 10px;
           padding: 8px 5px ;
           &:hover {
-            color: white;
+            color: #B9DEFE;
             background-color: #0082f0;
             
           }
         }
+      }
+      &:hover {
+        opacity: 1;
+        #course-controller{
+          #arrow{
+            transform: rotateZ(180deg) !important;
+          }
+        }
+        aside{
+          display: flex;
+          opacity: 1 !important;
+          a{
+            display: block !important;
+            opacity: 1 !important;
+          }
+        }
+
       }
     }
     .search {
@@ -419,7 +438,7 @@ footer {
         }
       }
       .courses {
-        p {
+        #course-controller {
           width: 80vw;
           color: black;
           justify-content: space-between;
@@ -454,7 +473,7 @@ footer {
       .courses{
         font-weight: 500;
         color: black;
-        p{
+        #course-controller{
           padding: 8px 0 8px 15px;
         }
         aside{

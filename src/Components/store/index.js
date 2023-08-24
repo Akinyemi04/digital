@@ -72,7 +72,7 @@ const Free_Taster= createSlice({
     initialState:{
         name:'',
         email:'',
-        course:'',
+        course:'Courses',
         Terms_check:false
     },
     reducers:{
