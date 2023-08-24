@@ -16,6 +16,7 @@ const Business_Analytic = () => {
     return (
       <div>
         <ScrollToTop />
+        
         <Success_stories/>
       </div>
     );

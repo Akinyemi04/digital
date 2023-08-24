@@ -41,7 +41,6 @@ const Success_stories = () => {
 
     setTimeout(() => {
       element.style.height = `${element.offsetHeight + 60}px`;
-      console.log(story_height);
     }, 1200);
 
   },[]);

@@ -21,10 +21,13 @@ function App() {
   const should_header_display = useSelector((val)=>{
     return val.landing.should_display_header
   })
+  const should_header_connect = useSelector((val)=>{
+    return val.landing.should_display_connect
+  })
   return (
     <BrowserRouter>
       {should_header_display && <Header/>}
-      <Connect/>
+      {should_header_connect && <Connect/>}
       <Routes>
         <Route exact path = '/' element={<LandingPage/>} />
         <Route path='/about' element={<About/>}/>

@@ -69,10 +69,13 @@ header {
   z-index: 3;
   display: flex;
   justify-content: space-between;
-  padding: 9px 63px 10px 23px;
+  padding: 0px 63px 0px 23px;
   align-items: center;
   opacity: 0;
   animation: view 0.4s linear forwards;
+}
+header #logo {
+  width: 135px;
 }
 header .hamburger {
   display: none;
@@ -169,19 +172,18 @@ header nav .courses:hover {
 header nav .courses {
   color: white;
   position: relative;
+  top: 14px;
+  height: 55px;
 }
-header nav .courses:hover {
-  opacity: 1;
-}
-header nav .courses p {
+header nav .courses #course-controller {
   display: flex;
   margin-top: 3px;
   transition: opacity 0.4s;
 }
-header nav .courses p:hover {
+header nav .courses #course-controller:hover {
   opacity: 0.67;
 }
-header nav .courses p span {
+header nav .courses #course-controller span {
   pointer-events: none;
   display: inline-flex;
   transition: all 0.4s linear;
@@ -205,15 +207,29 @@ header nav .courses aside a {
   color: #6262a9;
   font-size: 20px;
   opacity: 0;
-  font-weight: 700;
+  color: #252525;
   letter-spacing: 0.15px;
   transition: all 0.4s linear;
   border-radius: 10px;
   padding: 8px 5px;
 }
 header nav .courses aside a:hover {
-  color: white;
+  color: #B9DEFE;
   background-color: #0082f0;
+}
+header nav .courses:hover {
+  opacity: 1;
+}
+header nav .courses:hover #course-controller #arrow {
+  transform: rotateZ(180deg) !important;
+}
+header nav .courses:hover aside {
+  display: flex;
+  opacity: 1 !important;
+}
+header nav .courses:hover aside a {
+  display: block !important;
+  opacity: 1 !important;
 }
 header nav .search {
   color: white;
@@ -368,12 +384,12 @@ footer .second .four p {
   header nav .taster:hover, header nav p:hover {
     background-color: #88c6fc;
   }
-  header nav .courses p {
+  header nav .courses #course-controller {
     width: 80vw;
     color: black;
     justify-content: space-between;
   }
-  header nav .courses p:hover {
+  header nav .courses #course-controller:hover {
     color: #0082f0;
   }
   header nav .courses aside {
@@ -401,7 +417,7 @@ footer .second .four p {
     font-weight: 500;
     color: black;
   }
-  header nav .courses p {
+  header nav .courses #course-controller {
     padding: 8px 0 8px 15px;
   }
   header nav .courses aside a {

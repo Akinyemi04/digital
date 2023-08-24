@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import SearchIcon from "@mui/icons-material/Search";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import white_logo from "./images/white-logo.png";
@@ -8,13 +7,12 @@ import { useEffect } from "react";
 const Header = () => {
   const screenSize = window.screen.availWidth;
 
-
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-
-
-  useEffect(()=>{
-    window.addEventListener('scroll' , assistant_dropdown);
-  },[])
+  useEffect(() => {
+    window.addEventListener("scroll", assistant_dropdown);
+    return () => {
+      window.removeEventListener("scroll", assistant_dropdown);
+    };
+  }, []);
   function toggle_nav(e) {
     const nav = document.getElementById("nav");
     const body = document.getElementsByTagName("body")[0];
@@ -39,7 +37,8 @@ const Header = () => {
     }
   }
 
-  function assistant_dropdown() { // function for other links in the header to disable dropdown upon clicking
+  function assistant_dropdown() {
+    // function for other links in the header to disable dropdown upon clicking
     const click = document.getElementById("course-controller"); // event which triggered
     const child = click.children[1];
     const parent = click.parentElement; // targeting the section
@@ -58,7 +57,8 @@ const Header = () => {
     }, 60);
   }
 
-  function dropdown(e) { // dropdown function
+  function dropdown(e) {
+    // dropdown function
     const click = document.getElementById("course-controller"); // event which triggered
     const child = click.children[1]; // targetting the arrow icon
     const parent = click.parentElement; // targeting the section
@@ -143,17 +143,23 @@ const Header = () => {
           About us{" "}
         </NavLink>
         <div className="courses">
-          <p id="course-controller" onClick={dropdown}>
-            {" "}
-            <span>Courses</span>{" "}
-            <span id="arrow">
-              {screenSize > 1000 ? (
+          {screenSize > 1000 ? (
+            <NavLink id="course-controller" to="/courses">
+              <span>Courses</span>{" "}
+              <span id="arrow">
                 <ArrowDropDownIcon />
-              ) : (
+              </span>
+            </NavLink>
+          ) : (
+            <p id="course-controller" onClick={dropdown}>
+              {" "}
+              <span>Courses</span>{" "}
+              <span id="arrow">
                 <KeyboardArrowDownIcon />
-              )}
-            </span>
-          </p>
+              </span>
+            </p>
+          )}
+
           <aside>
             <NavLink
               onClick={screenSize > 1000 ? dropdown : navigate}
@@ -193,7 +199,10 @@ const Header = () => {
         >
           FAQs
         </NavLink>
-        <NavLink onClick= {navigate} to= '/Free_taster' className="taster "> Free Taster Session</NavLink>
+        <NavLink onClick={navigate} to="/Free_taster" className="taster ">
+          {" "}
+          Free Taster Session
+        </NavLink>
 
         <NavLink
           onClick={screenSize > 1000 ? assistant_dropdown : navigate}

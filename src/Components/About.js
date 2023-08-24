@@ -15,10 +15,8 @@ const About = () => {
   useEffect(() => {
     window.history.scrollRestoration = "manual";
     dispatch(landing.header(true));
-    window.removeEventListener("scroll", ScrollCheck);
+    dispatch(landing.connection(true))
   }, [dispatch]);
-
-  function ScrollCheck() {}
   return (
     <div>
       <ScrollToTop />

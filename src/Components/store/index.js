@@ -9,9 +9,17 @@ const landingDetails = createSlice({
         courses_max_height:'auto',
         courses_height:'auto',
         counter_component:true,
-        should_display_header:true
+        should_display_header:true,
+        should_display_connect:true
     },
     reducers:{
+        connection(state,action){
+            return{
+                ...state,
+                should_display_connect:action.payload
+            }
+        }
+        ,
         header(state,action){
             return{
                 ...state,
@@ -64,7 +72,7 @@ const Free_Taster= createSlice({
     initialState:{
         name:'',
         email:'',
-        course:'',
+        course:'Courses',
         Terms_check:false
     },
     reducers:{
