@@ -16,6 +16,7 @@ import Business_Analytic from './Components/Business_Analytic';
 import Data_Analysis from './Components/Data_Analysis';
 import { useSelector } from 'react-redux';
 import Scrum_Master from './Components/Scrum_Master';
+import Free_Taster_Popup from './Components/Free_Taster_Popup';
 
 function App() {
   const should_header_display = useSelector((val)=>{
@@ -23,6 +24,9 @@ function App() {
   })
   const should_header_connect = useSelector((val)=>{
     return val.landing.should_display_connect
+  })
+  const should_footer_display = useSelector((val)=>{
+    return val.landing.should_display_footer
   })
   return (
     <BrowserRouter>
@@ -41,8 +45,9 @@ function App() {
         <Route path='/business_analysis' element={<Business_Analytic/>}/>
         <Route path='/data_analytics' element={<Data_Analysis/>}/>
         <Route path='/scrum_master' element={<Scrum_Master/>}/>
+        <Route path='/success_F' element={<Free_Taster_Popup/>}/>
       </Routes>
-      <Footer/>
+      {should_footer_display && <Footer/>}
     </BrowserRouter>
 
   );
