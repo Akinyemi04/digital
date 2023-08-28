@@ -1,18 +1,12 @@
 import { NavLink } from "react-router-dom";
 import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import white_logo from "./images/white-logo.png";
-import { useEffect } from "react";
+// import white_logo from "./images/white-logo.png";
+import white_logo from "./images/header_logo.png";
 
 const Header = () => {
   const screenSize = window.screen.availWidth;
 
-  useEffect(() => {
-    window.addEventListener("scroll", assistant_dropdown);
-    return () => {
-      window.removeEventListener("scroll", assistant_dropdown);
-    };
-  }, []);
   function toggle_nav(e) {
     const nav = document.getElementById("nav");
     const body = document.getElementsByTagName("body")[0];
@@ -35,26 +29,6 @@ const Header = () => {
       icon.classList.toggle("open");
       body.style.overflowY = "scroll";
     }
-  }
-
-  function assistant_dropdown() {
-    // function for other links in the header to disable dropdown upon clicking
-    const click = document.getElementById("course-controller"); // event which triggered
-    const child = click.children[1];
-    const parent = click.parentElement; // targeting the section
-    const article = parent.children[1]; // targetng the article element
-    const arrow = document.getElementById("arrow");
-    const links = Array.from(article.children);
-    child.style.transform = "rotateZ(0deg)";
-    links.map((val) => {
-      val.style.opacity = "0";
-      setTimeout(() => {
-        val.style.display = "none";
-      }, 500);
-    });
-    setTimeout(() => {
-      article.style.opacity = "0";
-    }, 60);
   }
 
   function dropdown(e) {
@@ -81,6 +55,7 @@ const Header = () => {
           setTimeout(() => {
             val.style.opacity = "1";
           }, 100);
+          return('')
         });
       }, 55);
     } else if (style === "rotateZ(180deg)") {
@@ -90,6 +65,7 @@ const Header = () => {
         setTimeout(() => {
           val.style.display = "none";
         }, 500);
+        return('')
       });
       setTimeout(() => {
         article.style.opacity = "0";
@@ -106,6 +82,7 @@ const Header = () => {
           setTimeout(() => {
             val.style.opacity = "1";
           }, 100);
+          return('')
         });
       }, 55);
     }
@@ -123,7 +100,7 @@ const Header = () => {
         </aside>
       }
       <NavLink
-        onClick={screenSize > 1000 ? assistant_dropdown : navigate}
+       onClick={screenSize > 1000 && navigate}
         to="/"
       >
         <img id="logo" src={white_logo} alt="" />
@@ -136,7 +113,7 @@ const Header = () => {
           </NavLink>
         )}
         <NavLink
-          onClick={screenSize > 1000 ? assistant_dropdown : navigate}
+          onClick={screenSize > 1000 && navigate}
           to="/about"
         >
           {" "}
@@ -162,19 +139,19 @@ const Header = () => {
 
           <aside>
             <NavLink
-              onClick={screenSize > 1000 ? dropdown : navigate}
+              onClick={screenSize > 1000 && navigate}
               to="/scrum_master"
             >
               Practical Scrum Master
             </NavLink>
             <NavLink
-              onClick={screenSize > 1000 ? dropdown : navigate}
+              onClick={screenSize > 1000 && navigate}
               to="/business_analysis "
             >
               Practical Business Analysis
             </NavLink>
             <NavLink
-              onClick={screenSize > 1000 ? dropdown : navigate}
+              onClick={screenSize > 1000 && navigate}
               to="/data_analytics"
             >
               Data Analytics
@@ -182,19 +159,19 @@ const Header = () => {
           </aside>
         </div>
         <NavLink
-          onClick={screenSize > 1000 ? assistant_dropdown : navigate}
+          onClick={screenSize > 1000 && navigate}
           to="/work Experience"
         >
           Work Experience Program
         </NavLink>
         <NavLink
-          onClick={screenSize > 1000 ? assistant_dropdown : navigate}
+          onClick={screenSize > 1000 && navigate}
           to="/contact"
         >
           Contact Us
         </NavLink>
         <NavLink
-          onClick={screenSize > 1000 ? assistant_dropdown : navigate}
+          onClick={screenSize > 1000 && navigate}
           to="/faq"
         >
           FAQs
@@ -205,7 +182,7 @@ const Header = () => {
         </NavLink>
 
         <NavLink
-          onClick={screenSize > 1000 ? assistant_dropdown : navigate}
+          onClick={screenSize > 1000 && navigate}
           to="/login"
         >
           Log In

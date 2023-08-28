@@ -1,0 +1,215 @@
+.course .one {
+  position: relative;
+  top: -2px;
+}
+.course .one img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100vw;
+  max-height: 800px;
+}
+.course .one h1 {
+  position: absolute;
+  font-size: 96px;
+  font-weight: 600;
+  line-height: 115px;
+  letter-spacing: -1.5px;
+  top: 35%;
+  width: 100vw;
+  text-align: center;
+  color: white;
+}
+.course .two {
+  position: relative;
+  top: -10px;
+  background: linear-gradient(180deg, #b9defe 0%, rgba(185, 222, 254, 0) 100%);
+  display: flex;
+  align-items: center;
+  padding: 24px 7vw 96px;
+}
+.course .two img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 33vw;
+  max-width: 550px;
+}
+.course .two aside {
+  margin-left: 6.5vw;
+}
+.course .two aside h3 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 66px;
+  letter-spacing: -1.5px;
+  margin-bottom: 24px;
+}
+.course .two aside p {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 46px;
+  margin-bottom: 27px;
+}
+.course .two aside p br {
+  margin-bottom: 30px;
+}
+.course .two aside a {
+  text-align: center;
+  display: block;
+  width: 181px;
+  font-family: "Open Sans", sans-serif;
+  padding: 14px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  line-height: normal;
+  background: var(--gradient-fot-cta, linear-gradient(90deg, #0082f0 17.19%, #199ef3 65.1%, #6fb6f6 97.4%));
+  transition: opacity 0.4s;
+}
+.course .two aside a:hover {
+  opacity: 0.67;
+}
+.course .three {
+  display: flex;
+  padding: 48px 7vw 96px;
+  justify-content: space-between;
+}
+.course .three article {
+  width: 25.4vw;
+  border-radius: 20px;
+  background: var(--faded-sky-blue, #b9defe);
+  display: flex;
+  flex-direction: column;
+  height: 122px;
+  align-items: center;
+}
+.course .three article .question {
+  font-size: 29px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: -1.5px;
+}
+.course .three article .answer {
+  font-size: 33px;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: -1.5px;
+}
+.course .four {
+  position: relative;
+  top: -10px;
+  background: linear-gradient(180deg, #b9defe 0%, rgba(185, 222, 254, 0) 100%);
+  display: flex;
+  align-items: center;
+  padding: 24px 7vw 96px;
+  justify-content: space-between;
+}
+.course .four img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 33vw;
+  max-width: 550px;
+}
+.course .four aside {
+  margin-right: 5vw;
+  margin-left: 0;
+  font-size: 22px;
+}
+.course .four aside span {
+  font-weight: 600;
+  margin-bottom: 22px;
+}
+.course .four aside ul {
+  position: relative;
+  margin-top: 30px;
+  left: 42px;
+}
+.course .four aside ul li {
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.course .four aside h4 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 46px;
+  line-height: 66px;
+}
+.course .four aside p {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 46px;
+  margin-bottom: 24px;
+}
+.course .five {
+  padding: 26px 7vw 96px;
+}
+.course .five article h5 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 87px;
+  margin-bottom: 16px;
+}
+.course .five article span {
+  margin-bottom: 30px;
+  font-size: 21px;
+  font-weight: 600;
+}
+.course .five article ul {
+  position: relative;
+  left: 44px;
+  margin-top: 28px;
+}
+.course .five article ul li {
+  margin-bottom: 18px;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 46px;
+  letter-spacing: -1.5px;
+}
+.course .five div {
+  display: flex;
+  align-items: center;
+  margin-top: 90px;
+}
+.course .five div img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 33vw;
+  max-width: 550px;
+  margin-right: 8.5vw;
+}
+.course .five div aside h3 {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 85px;
+  letter-spacing: -1.5px;
+}
+.course .five div aside ul {
+  margin: 24px 0px;
+}
+.course .five div aside ul li {
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 44px;
+}
+.course .five div aside a {
+  text-align: center;
+  display: block;
+  width: 181px;
+  font-family: "Open Sans", sans-serif;
+  padding: 14px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  line-height: normal;
+  background: var(--gradient-fot-cta, linear-gradient(90deg, #0082f0 17.19%, #199ef3 65.1%, #6fb6f6 97.4%));
+  transition: opacity 0.4s;
+}
+.course .five div aside a:hover {
+  opacity: 0.67;
+}/*# sourceMappingURL=mini_course.css.map */

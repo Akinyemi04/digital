@@ -17,6 +17,8 @@ import Data_Analysis from './Components/Data_Analysis';
 import { useSelector } from 'react-redux';
 import Scrum_Master from './Components/Scrum_Master';
 import Free_Taster_Popup from './Components/Free_Taster_Popup';
+import Terms_Condition from './Components/Terms_Condition';
+import Privacy_Policy from './Components/Privacy_Policy';
 
 function App() {
   const should_header_display = useSelector((val)=>{
@@ -46,6 +48,8 @@ function App() {
         <Route path='/data_analytics' element={<Data_Analysis/>}/>
         <Route path='/scrum_master' element={<Scrum_Master/>}/>
         <Route path='/success_F' element={<Free_Taster_Popup/>}/>
+        <Route path='/terms and condition' element={<Terms_Condition/>} />
+        <Route path='/privacy policy' element={<Privacy_Policy/>}/>
       </Routes>
       {should_footer_display && <Footer/>}
     </BrowserRouter>

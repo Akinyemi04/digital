@@ -66,7 +66,7 @@
   max-height: 450px;
   width: 100vw;
 }
-.free_taster a {
+.free_taster .back {
   border-radius: 8px;
   border: 2px solid var(--accent-color, #0082f0);
   padding: 16px 20px;
@@ -80,7 +80,7 @@
   left: 7vw;
   transition: opacity 0.4s;
 }
-.free_taster a:hover {
+.free_taster .back:hover {
   opacity: 0.67;
 }
 .free_taster main {
@@ -132,6 +132,15 @@
 }
 .free_taster main .agreement .checkbox_text {
   margin-left: 20px;
+}
+.free_taster main .agreement .checkbox_text a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.4s;
+}
+.free_taster main .agreement .checkbox_text:hover a {
+  color: red;
+  text-decoration: underline;
 }
 .free_taster main label {
   color: rgba(0, 0, 0, 0.4);
@@ -189,17 +198,18 @@
   top: 47px;
   flex-direction: column;
   background-color: white;
-  padding: 20px 30px;
+  padding: 5px 0px;
   transition: opacity 0.3s;
 }
 .free_taster main div section span {
   cursor: pointer;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 16px;
+  padding: 5px 15px 5px 5px;
+  font-weight: 400;
   margin-bottom: 12px;
 }
 .free_taster main div section span:hover {
-  opacity: 0.5;
+  background-color: rgba(185, 222, 254, 0.21);
 }
 
 @media screen and (max-width: 500px) {
@@ -229,7 +239,7 @@
   .free_taster img {
     display: none;
   }
-  .free_taster a {
+  .free_taster .back {
     font-size: 16px;
     padding: 10px 20px;
     border: 1px solid #0082f0;
@@ -251,10 +261,10 @@
     margin-bottom: 7px;
   }
   .free_taster main .agreement {
-    margin-top: 78px;
+    margin-top: 90px;
   }
   .free_taster main .agreement #checkbox {
-    width: 36px;
+    width: 32px;
   }
   .free_taster main .agreement #checkbox .MuiSvgIcon-root {
     left: 2px;

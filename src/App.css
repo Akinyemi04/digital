@@ -76,6 +76,8 @@ header {
 }
 header #logo {
   width: 135px;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
 }
 header .hamburger {
   display: none;
@@ -191,8 +193,7 @@ header nav .courses #course-controller span {
 header nav .courses aside {
   position: absolute;
   top: 50px;
-  left: -100px;
-  padding: 24px;
+  left: -10px;
   border-radius: 8px;
   background: #dbdbdc;
   z-index: 4;
@@ -203,10 +204,13 @@ header nav .courses aside {
 }
 header nav .courses aside a {
   text-decoration: none;
+  padding: 14px 10px;
   display: none;
   color: #6262a9;
+  padding-inline-start: 6px 20px;
   font-size: 20px;
   opacity: 0;
+  font-weight: 400;
   color: #252525;
   letter-spacing: 0.15px;
   transition: all 0.4s linear;
@@ -214,8 +218,7 @@ header nav .courses aside a {
   padding: 8px 5px;
 }
 header nav .courses aside a:hover {
-  color: #B9DEFE;
-  background-color: #0082f0;
+  background-color: rgba(185, 222, 254, 0.21);
 }
 header nav .courses:hover {
   opacity: 1;

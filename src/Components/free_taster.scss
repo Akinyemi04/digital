@@ -66,7 +66,7 @@
     width: 100vw;
   }
 
-  a {
+  .back {
     border-radius: 8px;
     border: 2px solid var(--accent-color, #0082f0);
     padding: 16px 20px;
@@ -133,6 +133,17 @@
       }
       .checkbox_text {
         margin-left: 20px;
+        a{
+          text-decoration: none;
+          color: black;
+          transition: all 0.4s ;
+        }
+        &:hover{
+          a{
+            color: red;
+            text-decoration: underline;
+          }
+        }
       }
     }
     label {
@@ -153,6 +164,7 @@
       outline: none;
       border-radius: 8px;
       border: 1px solid var(--deep-grey, #868688);
+      
       &::placeholder {
         color: rgba(0, 0, 0, 0.4);
         font-size: 16px;
@@ -183,15 +195,16 @@
         top: 47px;
         flex-direction: column;
         background-color: white;
-        padding: 20px 30px;
+        padding: 5px 0px;
         transition: opacity 0.3s;
         span {
           cursor: pointer;
-          font-size: 18px;
-          font-weight: 600;
+          font-size: 16px;
+          padding:5px 15px 5px 5px;
+          font-weight: 400;
           margin-bottom: 12px;
           &:hover {
-            opacity: 0.5;
+            background-color:rgba(185, 222, 254, 0.21);
           }
         }
       }
@@ -227,7 +240,7 @@
     img {
       display: none;
     }
-    a {
+    .back {
       font-size: 16px;
       padding: 10px 20px;
       border: 1px solid #0082f0;
@@ -250,9 +263,9 @@
         }
       }
       .agreement {
-        margin-top: 78px;
+        margin-top: 90px;
         #checkbox {
-          width: 36px;
+          width: 32px;
           .MuiSvgIcon-root {
             left: 2px;
           }

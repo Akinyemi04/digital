@@ -72,21 +72,24 @@ const Free_Taster = () => {
     }
  
   }
-  function submit() {
+  function submit(e) {
       if(name.length !== 0 && email.length !== 0 && course !== 'Courses' && term_condition !== false){
         console.log('pass')
         nav('/success_F')
 
       }
       else{
-        console.log('fail')
+        e.target.innerHTML = 'All Fields are required'
+        setTimeout(() => {
+            e.target.innerHTML = 'Submit'
+        }, (1500));
       }
   }
   return (
     <div className="free_taster">
       <ScrollToTop />
       <img src={bg1} alt="" />
-      <NavLink to="/">Back</NavLink>
+      <NavLink className='back' to="/">Back</NavLink>
       <main>
         <h1>Register for Free Taster</h1>
         <label htmlFor="name"> Full Name</label>
@@ -111,7 +114,7 @@ const Free_Taster = () => {
         />
         <div>
           <p className="pin"> 
-            <span>{course}</span>{" "}
+            <span id="course_picked">{course}</span>{" "}
             <span onClick={display_courses} id="course_arrow">
               <KeyboardArrowDownIcon />
             </span>
@@ -121,6 +124,8 @@ const Free_Taster = () => {
               onClick={(e) => {
                 dispatch(Free_Taste.change_course(e.target.innerHTML));
                 display_courses()
+                const elem = document.getElementById('course_picked')
+                elem.style.color= 'black'
               }}
             >
               Practical Scrum Master
@@ -129,6 +134,8 @@ const Free_Taster = () => {
               onClick={(e) => {
                 dispatch(Free_Taste.change_course(e.target.innerHTML));
                 display_courses()
+                const elem = document.getElementById('course_picked')
+                elem.style.color= 'black'
               }}
             >
               Practical Business Analysis
@@ -137,13 +144,15 @@ const Free_Taster = () => {
               onClick={(e) => {
                 dispatch(Free_Taste.change_course(e.target.innerHTML));
                 display_courses()
+                const elem = document.getElementById('course_picked')
+                elem.style.color= 'black'
               }}
             >
               Data Analytics
             </span>
           </section>
         </div>
-        <p className="agreement"> <span onClick={verify} id="checkbox"><DoneIcon/></span> <span className="checkbox_text">I hereby agree to the Terms and conditions and Privacy policy.</span></p>
+        <p className="agreement"> <span onClick={verify} id="checkbox"><DoneIcon/></span> <span className="checkbox_text">I hereby agree to the <NavLink to='/terms and condition'>Terms and conditions </NavLink>and <NavLink to='/privacy policy'>Privacy policy</NavLink>.</span></p>
         <button onClick={submit}>Submit</button>
       </main>
     </div>
