@@ -43,7 +43,7 @@ const Success_stories = () => {
       element.style.height = `${element.offsetHeight + 60}px`;
     }, 1200);
 
-  },[]);
+  },[dispatch,screen]);
   return (
     <section className="success_story">
       <h2> Success Stories</h2>

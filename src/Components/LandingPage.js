@@ -1,5 +1,5 @@
 import "./Landing.css";
-import { useEffect } from "react";
+import { useCallback, useEffect } from "react";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import ScrollToTop from "./ScrollToTop";
 import lady from "./images/DCK 1.png";
@@ -68,16 +68,7 @@ const LandingPage = () => {
     }
   }, [screen, dispatch]);
 
-  useEffect(() => {
-    window.addEventListener("scroll", ScrollCheck);
-    window.history.scrollRestoration = "manual";
-    dispatch(landing.header(true));
-    return () => {
-      window.removeEventListener("scroll", ScrollCheck);
-    };
-  }, [dispatch, screen, ScrollCheck]);
-
-  function ScrollCheck() {
+  function ScrollChecker() {
     let valueDisplays = document.querySelectorAll(".counter");
     const Elder = document.getElementById("parent");
     if (Elder.parentElement.classList.contains("visible")) {
@@ -103,6 +94,18 @@ const LandingPage = () => {
       });
     }
   }
+  const ScrollCheck = useCallback(()=>{
+    ScrollChecker()
+  })
+  useEffect(() => {
+    window.addEventListener("scroll", ScrollCheck);
+    window.history.scrollRestoration = "manual";
+    dispatch(landing.header(true));
+    return () => {
+      window.removeEventListener("scroll", ScrollCheck);
+    };
+  }, [dispatch, screen, ScrollCheck]);
+
 
   function cookie_control() {
     const element = document.getElementsByClassName("cookie_start")[0];

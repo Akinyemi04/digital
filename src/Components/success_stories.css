@@ -54,7 +54,7 @@
   bottom: 30px;
 }
 
-@media screen and (max-width: ) {
+@media screen and (max-width: 500px) {
   .success_story {
     padding: 0;
   }

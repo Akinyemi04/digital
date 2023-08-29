@@ -100,7 +100,7 @@ const Header = () => {
         </aside>
       }
       <NavLink
-       onClick={screenSize > 1000 && navigate}
+       onClick={screenSize < 1000 && navigate}
         to="/"
       >
         <img id="logo" src={white_logo} alt="" />
@@ -113,14 +113,14 @@ const Header = () => {
           </NavLink>
         )}
         <NavLink
-          onClick={screenSize > 1000 && navigate}
+          onClick={screenSize < 1000 && navigate}
           to="/about"
         >
           {" "}
           About us{" "}
         </NavLink>
         <div className="courses">
-          {screenSize > 1000 ? (
+          {screenSize < 1000 ? (
             <NavLink id="course-controller" to="/courses">
               <span>Courses</span>{" "}
               <span id="arrow">
@@ -139,19 +139,19 @@ const Header = () => {
 
           <aside>
             <NavLink
-              onClick={screenSize > 1000 && navigate}
+              onClick={screenSize < 1000 && navigate}
               to="/scrum_master"
             >
               Practical Scrum Master
             </NavLink>
             <NavLink
-              onClick={screenSize > 1000 && navigate}
+              onClick={screenSize < 1000 && navigate}
               to="/business_analysis "
             >
               Practical Business Analysis
             </NavLink>
             <NavLink
-              onClick={screenSize > 1000 && navigate}
+              onClick={screenSize < 1000 && navigate}
               to="/data_analytics"
             >
               Data Analytics
@@ -159,19 +159,19 @@ const Header = () => {
           </aside>
         </div>
         <NavLink
-          onClick={screenSize > 1000 && navigate}
+          onClick={screenSize < 1000 && navigate}
           to="/work Experience"
         >
           Work Experience Program
         </NavLink>
         <NavLink
-          onClick={screenSize > 1000 && navigate}
+          onClick={screenSize < 1000 && navigate}
           to="/contact"
         >
           Contact Us
         </NavLink>
         <NavLink
-          onClick={screenSize > 1000 && navigate}
+          onClick={screenSize < 1000 && navigate}
           to="/faq"
         >
           FAQs
@@ -182,7 +182,7 @@ const Header = () => {
         </NavLink>
 
         <NavLink
-          onClick={screenSize > 1000 && navigate}
+          onClick={screenSize < 1000 && navigate}
           to="/login"
         >
           Log In

@@ -1,3 +1,7 @@
+.course {
+  opacity: 0;
+  animation: view 0.6s linear forwards;
+}
 .course .one {
   position: relative;
   top: -2px;
