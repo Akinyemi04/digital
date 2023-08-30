@@ -65,12 +65,14 @@
   .success_story article {
     padding: 40px 13px;
     margin-left: 33px;
-    width: 78vw;
+    width: 82vw;
     min-height: 390px;
     border-radius: 13px;
   }
   .success_story article .name {
     margin-top: 40px;
+    position: relative;
+    bottom: 0;
   }
   .success_story article img {
     width: 100px;
