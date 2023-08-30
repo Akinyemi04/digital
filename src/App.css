@@ -354,7 +354,8 @@ footer .second .four p {
   header #logo {
     position: relative;
     z-index: 4;
-    right: 2vw;
+    width: auto;
+    right: 2.5vw;
   }
   header .taster {
     background-color: white;
